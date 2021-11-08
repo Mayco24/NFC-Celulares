@@ -1,0 +1,23 @@
+@mixin block($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin caja($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin condicion ($color) {
+    @if $color == $bg_blanco{
+        color: white;
+    }
+    @else if $color == $bg_blanco2{
+        color: whitesmoke;
+    }
+    @else{
+        color: #dadada;
+    }
+}
+
+

@@ -1,0 +1,716 @@
+
+main{
+    width: 100%;
+    .seccionCarrusel{
+        .carousel{
+            margin-bottom: 50px;
+            .carousel-inner{
+                img{
+                    @include block(1200px, 561px);
+                }
+            }
+        }
+    }
+    .seccionMasVendido{
+        section{
+            text-align: center;
+            .grid-masVendido{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                align-items: baseline;
+                margin: 20px;
+                div{
+                    background-color: $bg_blanco;
+                    border-radius: 1em;
+                    img{
+                        height: 450px;
+                    }
+                    &:hover{
+                        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                        transform: scale(1.05);
+                    }
+                    .colorPrecio{
+                        font-size: 1.5rem;
+                        color: $bg_morado;
+                    }
+                }
+                
+            }
+    
+            h2{
+                display: inline-block;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    left: -500px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    right: -500px;
+                }
+            }
+        }
+    }
+
+    .seccionLanzamiento{
+        section{
+            text-align: center;
+            .grid-Lanzamiento{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                align-items: baseline;
+                margin: 20px;
+                div{
+                    background-color: $bg_blanco;
+                    border-radius: 1em;
+                    img{
+                        height: 450px;
+                    }
+                    &:hover{
+                        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                        transform: scale(1.05);
+                    }
+                    .colorPrecio{
+                        font-size: 1.5rem;
+                        color: $bg_morado;
+                    }
+                }
+            }
+            h2{
+                display: inline-block;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    left: -500px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    right: -500px;
+                }
+            }
+        }
+    }
+    .seccionAlg-ofertas{
+        section{
+            text-align: center;
+            .grid-algunasOfertas{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                align-items: baseline;
+                margin: 20px;
+                div{
+                    background-color: $bg_blanco;
+                    border-radius: 1em;
+                    img{
+                        height: 450px;
+                    }
+                    &:hover{
+                        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                        transform: scale(1.05);
+                    }
+                    .colorPrecio{
+                        font-size: 1.5rem;
+                        color: $bg_morado;
+                        .precioAnterior{
+                            text-decoration: line-through;
+                            color: $bg_gris;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            h2{
+                display: inline-block;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    left: -500px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    right: -500px;
+                }
+            }
+        }
+    }
+
+    section{
+        text-align: center;
+        .seccionNovedades{
+            .novedadesSamsung{
+                background-color: $bg_negro2;
+                @include condicion ($bg_blanco2);
+                display: inline-block;
+                height: 440px;
+                margin: 20px;
+                iframe{
+                    float: left;
+                    margin: 20px;
+                }
+                .novedadesSamsung-texto{
+                    text-align: justify;
+                    padding: 20px;
+                    h2{
+                        text-align: center;
+                        margin-top: 50px;
+                        @include condicion ($bg_blanco2);
+                    }
+
+                }
+            }
+
+            .novedadesIphone{
+                background-color: $bg_negro2;
+                @include condicion ($bg_blanco2);
+                display: inline-block;
+                height: 440px;
+                margin: 20px;
+                iframe{
+                    float: right;
+                    margin: 20px;
+                }
+                .novedadesIphone-texto{
+                    h2{
+                        text-align: center;
+                        @include condicion ($bg_blanco2);
+                        margin: -5px;
+                    }
+                    p{
+                        text-align: justify;
+                        padding: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .novedadesSamsungTablet{
+                background-color: $bg_negro2;
+                @include condicion ($bg_blanco2);
+                display: inline-block;
+                height: 440px;
+                margin-top: 50px;
+                iframe{
+                    float: left;
+                }
+                .novedadesSamsungTablet-texto{
+                    text-align: center;
+                    margin-top: 30px;
+                    p{
+                        text-align: justify;
+                        padding: 20px;
+                    }
+                    h2{
+                        @include condicion ($bg_blanco2);
+                    }
+                }
+            }
+            .seccionNovedadesTitulo{
+                display: inline-block;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    left: -500px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    right: -500px;
+                }
+            }
+        }
+
+        .seccionHydrogel{
+            background: #0f0c29;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            margin: 20px;
+            margin-top: 100px;
+            @include block(1308px, 500px);
+            border-radius: 10px;
+            img{
+                width: 500px;
+                float: left;
+            }
+            h2{
+                text-align: end;
+                font-size: 50px;
+                padding-top: 80px;
+                padding-right: 150px;
+                @include condicion ($bg_blanco);
+            }
+            p{
+                color: white;
+                text-align: justify;
+                font-size: 17px;
+                padding-left: 800px;
+                padding-right: 90px;
+            }
+            button{
+                background-color: $bg_morado;
+                @include block(150px, 50px);
+                border-radius: 30px;
+                border: none;
+                margin-left: 230px;
+                margin-top: 20px;
+                a{
+                    color: $bg_blanco;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .seccionChat{
+            position: fixed;
+            right: -20px;
+            bottom: 2px;
+            list-style:none;
+            .btn-group{
+                ul{
+                    padding-left: 80px;
+                    background-color: transparent;
+                    color: transparent;
+                    border: none;
+                    list-style: none;
+                    button{
+                        &:hover {
+                            color: transparent;
+                            background-color: transparent;
+                            border: none;
+                            transform: rotate(345deg);
+                        }
+                    }
+                    ul{
+                        li{
+                            a{
+                                img{
+                                    width: 45px;
+                                }
+                                &:hover {
+                                    background-color: transparent;
+                                    color: transparent;
+                                    border: none;
+                                    list-style-type: none;
+                                    transform: scale(1.2, 1.2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .seccionArriba{
+            position: fixed;
+            bottom: 15px;
+            left: 5px;
+            a{
+                img{
+                    width: 40px;
+                    &:hover{
+                        transform: scale(1.2, 1.2);
+                    }
+                }
+            }
+        }
+
+        .seccionExtra{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            margin:20px;
+            div{
+                background-color: $bg_blanco;
+                padding-left: 20px;
+                img{
+                    float: left;
+                    margin: 20px;
+                    padding-left: 32px;
+                }
+                p{
+                    float: left;
+                }
+            }
+            .extra1{
+                p{
+                    margin-top: 40px;
+                }
+            }
+            .extra2{
+                p{
+                    padding-top: 27px;
+                }
+            }
+            .extra3{
+                p{
+                    margin-top: 40px;
+                }
+            }
+        }
+
+        /*Productos*/
+
+        .seccionProductos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1.4rem;
+                color: $bg_gris;
+                margin-right: 27px;
+                padding: 20px;
+                img{
+                    &:hover{
+                        transform: scale(1.05, 1.05);
+                    }
+                }
+                &:hover{
+                    color: $bg_morado;
+                }
+            }
+            p{
+                padding: 8px;
+            }
+        }
+        .productosMarcas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+            margin: 40px;
+            margin-bottom: 80px;
+        }
+
+        .grid-Celulares{
+            display: grid;
+            grid-template-rows: repeat(1, 3fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-self: baseline;
+            align-content: space-between;
+            @include caja(20px, 20px);
+            div{
+                background-color: $bg_blanco;
+                border-radius: 1em;
+                &:hover{
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                    transform: scale(1.05);
+                }
+                .colorPrecio{
+                    font-size: 1.5rem;
+                    color: $bg_morado;
+                }
+                img{
+                    height: 400px;
+                }
+            }
+        }
+
+        .grid-Tablet{
+            display: grid;
+            grid-template-rows: repeat(1, 2fr);
+            grid-template-columns: repeat(3, 2fr);
+            gap: 30px;
+            align-items: baseline;
+            align-content: space-between;
+            @include caja(20px, 20px);
+            div{
+                background-color: $bg_blanco;
+                border-radius: 1em;
+                &:hover{
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                    transform: scale(1.05);
+                }
+                .colorPrecio{
+                    font-size: 1.5rem;
+                    color: $bg_morado;
+                }
+                img{
+                    @include block(300px, 400px);
+                }
+            }
+        }
+
+        .grid-Relojes{
+            display: grid;
+            grid-template-rows: repeat(1, 2fr);
+            grid-template-columns: repeat(3, 2fr);
+            gap: 30px;
+            align-items: baseline;
+            align-content: space-between;
+            @include caja(20px, 20px);
+            div{
+                background-color: $bg_blanco;
+                border-radius: 1em;
+                &:hover{
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                    transform: scale(1.05);
+                }
+                img{
+                    @include block(300px, 400px);
+                }
+                .colorPrecio{
+                    font-size: 1.5rem;
+                    color: $bg_morado;
+                }
+            }
+        }
+
+        .seccionTituloCel{
+            display: inline-block;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 1.2rem;
+                left: -500px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 1.2rem;
+                right: -500px;
+            }
+        }
+
+        .seccionTitulo{
+            display: inline-block;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 2.2rem;
+                left: -500px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 2.2rem;
+                right: -500px;
+            }
+        }
+
+        /*----------------Ofertas------------------*/
+        .grid-Ofertas{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: baseline;
+            align-content: space-between;
+            margin: 20px;
+            div{
+                background-color: $bg_blanco;
+                border-radius: 1em;
+                img{
+                    @include block(300px, 400px);
+                }
+                p{
+                    align-self: end;
+                }
+                &:hover{
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                    transform: scale(1.05);
+                }
+                .colorPrecio{
+                    font-size: 1.5rem;
+                    color: $bg_morado;
+                    .precioAnterior{
+                        text-decoration: line-through;
+                        color: $bg_gris;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .oferItem2 img, .oferItem3 img, .oferItem6 img, .oferItem7 img{
+                width: 200px;
+            }
+
+        }
+
+        /*----------------Contacto-----------------*/
+
+        .fondoContacto{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 20px;
+            img{
+                @include block(1348px, 300px);
+            }
+            div{
+                position: absolute;
+                top: 50%;
+                left: 75%;
+                transform: translate(-15%, -50%);
+                border-bottom: 4px solid $bg_morado;
+                h1{
+                    color: $bg_blanco;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+        .seccionFormulario{
+            margin: 50px;
+            .p-3{
+                h3{
+                    color: $bg_morado;
+                }
+                .container{
+                    width: 800px;
+                    margin: auto;
+                    padding: 10px 30px;
+                    div{
+                        .row{
+                            .col{
+                                h3{
+                                    padding: 20px;
+                                }
+                            }
+                        }
+                        h3{
+                            padding: 20px;
+                        }
+                    }
+                    .formButton{
+                        button{
+                            width: 370px;
+                            padding: 20px;
+                            margin: 10px;
+                            background-color: $bg_morado;
+                            @include condicion ($bg_blanco);
+                            font-size: 19px;
+                            font-weight: 600;
+                            border: none;
+                            text-decoration: none;
+                            &:hover{
+                                background-color: $bg_segundoMorado;
+                                color: $bg_blanco;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contacto-Mensajeria{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            margin:50px;
+            div{
+                background-color: $bg_blanco;
+                padding-top: 50px;
+                height: 200px;
+                p{
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding-top: 5px;
+                }
+            }
+        }
+        .contacto-redesSociales{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
+            padding-right: 10px;
+            img{
+                padding: 20px;
+            }
+        }
+        
+
+        /*-------------Quienes Somos--------------*/
+
+        .seccionQuienessomos{
+                font-weight: 500;
+                .fondoQuienes-somos{
+                    position: relative;
+                    display: inline-block;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    img{
+                        @include block(1348px, 300px);
+                    }
+                    div{
+                        position: absolute;
+                        top: 50%;
+                        left: 75%;
+                        transform: translate(-15%, -50%);
+                        border-bottom: 4px solid $bg_morado;
+                        h1{
+                            color: $bg_blanco;
+                            letter-spacing: 0.5rem;
+                        }
+                    }
+                }
+                div{
+                    h2{
+                        font-size: 1.4rem;
+                        border-bottom: 2px solid $bg_morado;
+                        margin-right: 450px;
+                    }
+
+                    .imgQuienessomos-lateral{
+                        float: right;
+                        width: 400px;
+                        padding-right: 80px;
+                        margin: 20px;
+                    }
+
+                    .textoQuienessomos{
+                        text-align: justify;
+                        padding: 20px;
+                        margin-top: 10px;
+                    }
+                }
+        }
+    }
+}

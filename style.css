@@ -1,0 +1,1156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #dadada;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5 , auto); ;
+    grid-template-areas: "contHeader contHeader contHeader"
+                         "contMain contMain contMain"
+                         "contMain contMain contMain"
+                         "contMain contMain contMain"
+                         "contFooter contFooter contFooter";
+}
+
+.contenedor .contHeader{
+    grid-area: contHeader;
+}
+
+.contenedor .contMain{
+    grid-area: contMain;
+}
+
+.contenedor .contFooter{
+    grid-area: contFooter;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+h1{
+    font-weight: 600;
+    color: #5a5a5a;
+    font-size: 32px;
+    margin: 20px;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 500;
+    color: #5a5a5a;
+}
+
+h3{
+    font-size: 22px;
+    padding: 5px;
+}
+
+h4{
+    font-size: 16px;
+    text-align: center;
+}
+
+.headInicio{
+    padding-right: 190px;
+}
+.headInicio img{
+    width: 170px;
+}
+
+nav{
+    padding-right: 10px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 18px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+
+nav ul li a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 19px;
+    color: white;
+}
+
+.submitBuscador input {
+    height: 35px;
+    width: 250px;
+}
+
+.submitBuscador button{
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 153px;
+    border: none;
+}
+
+.botonesInicio{
+    padding: 5px;
+}
+
+.botonesInicio form input{
+    background-color: #5c268c;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.botonesInicio form input::placeholder{
+    color: white;
+}
+
+.botonesInicio form input:focus{
+    border: 1.5px solid white;
+    outline: none;
+}
+
+.botonesInicio form input:active{
+    padding: 5px;
+} 
+
+.botonesLateral button{
+    padding: 15px;
+}
+
+.input-group input{
+    padding: 10px;
+    margin: 10px;
+    width: 10px;
+}
+
+.buttonIngresar{
+    width: 300px;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 80px;
+    background-color: #5c268c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttonIngresar:hover{
+    background-color: #4524A3;
+}
+
+.hint-text{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hint-text a{
+    text-decoration: none;
+    color: #4389a2;
+}
+
+.hint-text a:hover{
+    color: #3F57B0;
+}
+
+.usuarioColor{
+    background-color: #4389a2;
+}
+
+.modal-body img{
+    text-align: center;
+    padding-left: 140px;
+    width: 300px;
+    margin:10px;
+}
+
+.modal-footer{
+    padding-right: 110px;
+}
+
+.modal-footer a{
+    color: #4389a2;
+    text-decoration: none;
+}
+
+.modal-footer a:hover{
+    color: #3F57B0;
+}
+
+/*------------------------Main------------------------------*/
+
+.main{
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.seccionCarrusel .carousel-inner img{
+    width: 1200px;
+    height: 561px;
+}
+
+.seccionCarrusel .carousel{
+    margin-bottom: 50px;
+}
+
+section{
+    text-align: center;
+}
+
+.seccionMasVendido h2, .seccionLanzamiento h2, .seccionAlg-ofertas h2, .seccionNovedades h2{
+    display: inline-block;
+    position: relative;
+}
+
+.seccionMasVendido h2::after, .seccionMasVendido h2::before, .seccionLanzamiento h2::after, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::after, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::after, .seccionNovedadesTitulo::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 1px;
+    background-color: currentColor;
+    top: 2.2rem;
+}
+
+.seccionMasVendido h2::after, .seccionLanzamiento h2::after, .seccionAlg-ofertas h2::after, .seccionNovedadesTitulo::after{
+    left: -500px;
+}
+
+.seccionMasVendido h2::before, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::before{
+    right: -500px;
+}
+
+.grid-masVendido, .grid-Lanzamiento, .grid-algunasOfertas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.grid-masVendido img, .grid-Lanzamiento img, .grid-algunasOfertas img{
+    height: 450px;
+}
+
+.grid-masVendido div, .grid-Lanzamiento div, .grid-algunasOfertas div{
+    background-color: white;
+    border-radius: 1em;
+}
+
+.grid-masVendido div:hover, .grid-Lanzamiento div:hover, .grid-algunasOfertas div:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+.colorPrecio{
+    font-size: 1.5rem;
+    color: #5C258D;
+}
+
+
+/*Novedades*/
+
+.novedadesSamsung{
+    background-color: #262626;
+    color: whitesmoke;
+    display: inline-block;
+    height: 450px;
+    margin: 20px;
+}
+
+.novedadesSamsung iframe{
+    float: left;
+    margin: 20px;
+}
+
+.novedadesSamsung-texto h2{
+    text-align: center;
+    margin-top: 70px;
+    color: whitesmoke;
+}
+
+.novedadesSamsung-texto p{
+    text-align: justify;
+    padding: 20px;
+    
+}
+
+.novedadesIphone{
+    background-color: #262626;
+    color: whitesmoke;
+    display: inline-block;
+    height: 450px;
+    margin: 20px;
+}
+
+.novedadesIphone iframe{
+    float: right;
+    margin: 20px;
+}
+
+.novedadesIphone-texto h2{
+    text-align: center;
+    margin: -5px;
+    color: whitesmoke;
+    
+}
+
+.novedadesIphone-texto p{
+    text-align: justify;
+    padding: 20px;
+}
+
+.novedadesSamsungTablet{
+    background-color: #262626;
+    color: whitesmoke;
+    display: inline-block;
+    height: 450px;
+    margin-top: 50px;
+}
+
+.novedadesSamsungTablet iframe{
+    float: left;
+}
+
+.novedadesSamsungTablet-texto{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.novedadesSamsungTablet-texto p{
+    text-align: justify;
+    padding: 20px;
+}
+
+.novedadesSamsungTablet-texto h2{
+    color: whitesmoke;
+}
+
+/*Hydrogel*/
+
+.seccionHydrogel{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 20px;
+    margin-top: 100px;
+    height: 500px;
+    width: 1280;
+    border-radius: 10px;
+}
+
+.seccionHydrogel img{
+    width: 500px;
+    float: left;
+}
+
+.seccionHydrogel h2{
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.seccionHydrogel p{
+    color: whitesmoke;
+    text-align: justify;
+    padding: 30px;
+}
+
+.seccionHydrogel button{
+    background-color: #5C258D;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 25px;
+    margin-top: 50px;
+}
+
+.seccionHydrogel button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Suscribete*/
+
+.seccionSuscribete{
+    background-color: #2d2c73;
+    height: 150px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.seccionSuscribete h3{
+    color: white;
+    padding: 10px;
+    padding-right: 80px;
+}
+
+.seccionSuscribete p{
+    padding: 15px;
+    color: white;
+    font-size: 13px;
+}
+
+.seccionSuscribete form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 2px;
+    color: white;
+    width: 230px;
+}
+
+.seccionSuscribete form input::placeholder{
+    color: white;
+}
+
+.seccionSuscribete form input:hover{
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.seccionSuscribete form input:focus{
+    border: 1.5px solid white;
+    outline: none;
+}
+
+.seccionSuscribete img{
+    float: left;
+    width: 153px;
+    margin-left: 150px;
+}
+
+.seccionSuscribete form button{
+    background-color: #5c268c;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    margin-left: 20px;
+}
+
+/*Extras*/
+
+.seccionExtra{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin:20px;
+}
+
+.seccionExtra div{
+    background-color: white;
+    padding-left: 20px;
+}
+
+.seccionExtra img{
+    float: left;
+    margin: 20px;
+    padding-left: 32px;
+}
+
+.extra1 p, .extra3 p{
+    float: left;
+    margin-top: 40px;
+    color: black;
+}
+
+.extra2 p{
+    float: left;
+    padding-top: 27px;
+    color: black;
+}
+
+/*Seccion Chat*/
+
+.seccionChat{
+    position: fixed;
+    right: -20px;
+    bottom: 2px;
+    list-style:none;
+}
+
+.btn-group ul ul {
+    padding-left: 80px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    list-style: none;
+}
+
+.btn-group ul ul li a:hover {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    list-style-type: none;
+}
+
+.btn-group ul button:hover {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    transform: rotate(345deg);
+}
+
+.dropdown-item img{
+    width: 45px;
+}
+
+.seccionArriba{
+    position: fixed;
+    bottom: 15px;
+    left: 5px;
+}
+.seccionArriba a img{
+    width: 40px;
+}
+
+.seccionArriba a img:hover , .seccionChat ul li img:hover{
+    transform: scale(1.2, 1.2);
+}
+
+/*--------Pie de Pagina---------*/
+
+footer{
+    padding: 1.5rem;
+    background-color: #25262c;
+    border-bottom: 5px solid black;
+}
+
+footer h2{
+    color: white;
+    margin-top: 20px;
+    font-weight: 450;
+    font-size: 28px;
+}
+
+.piePagina{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 70px;
+}
+
+.piePagina ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.ftrSuscribete form{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.ftrSuscribete form p{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.ftrSuscribete form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #9c9c9c;
+    padding: 2px;
+    color: white;
+    width: 230px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.ftrSuscribete form input::placeholder{
+    color: white;
+}
+
+.ftrSuscribete form input:hover{
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.ftrSuscribete form input:focus{
+    border: 2px solid white;
+    outline: none;
+}
+
+.ftrSuscribete form button{
+    background-color: #5c268c;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-left: 85px;
+}
+
+.ftrInformacion ul{
+    padding-left: 50px;
+}
+
+.ftrInformacion ul li{
+    padding-top: 10px;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.ftrInformacion ul li a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.ftrInformacion ul li a:hover{
+    color: #dadada;
+}
+
+.modal{
+    color: black;
+}
+
+.modal-body h4{
+    padding: 15px;
+}
+
+.infoColor{
+    background-color: #dadada;
+}
+
+.modalTextoInformacion{
+    text-align: justify;
+}
+
+.imgTarjetasDebito{
+    padding-bottom: 30px;
+}
+
+.pagoTarjetaCredito{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.pagoTarjetaCredito p{
+    padding-left: 10px;
+}
+
+
+.ftrSecciones ul li{
+    color: white;
+    text-align: start;
+    padding-top: 10px;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.ftrSecciones ul{
+    padding-left: 50px;
+}
+
+.ftrSecciones ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.ftrSecciones ul li a:hover{
+    color: #dadada;
+}
+
+.ftrLogo img{
+    width:210px;
+    margin-top: 18px;
+}
+
+.ftrLogo p{
+    padding-left: 30px;
+    color: #dadada;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ftrLogo div{
+    padding-left: 30px;
+    margin: 20px;
+}
+
+.ftrLogo div a{
+    padding-left: 8px;
+}
+
+.ftrLogo div a img{
+    width: 35px;
+}
+
+.ftrLogo div a:hover{
+    color: #dadada;
+}
+
+/*Productos*/
+
+.grid-Celulares{
+    display: grid;
+    grid-template-rows: repeat(1, 3fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-self: baseline;
+    align-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+.seccionTitulo, .seccionTituloCel{
+    display: inline-block;
+    position: relative;
+}
+
+.seccionTitulo::after, .seccionTitulo::before, .seccionTituloCel::after, .seccionTituloCel::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 1px;
+    background-color: currentColor;
+    top: 2.2rem;
+}
+
+.seccionTituloCel::after, .seccionTituloCel::before{
+    top: 1.2rem;
+}
+
+
+.seccionTitulo::after, .seccionTitulo::after, .seccionTituloCel::after{
+    left: -500px;
+}
+
+.seccionTitulo::before, .seccionTitulo::before, .seccionTituloCel::before{
+    right: -500px;
+}
+
+.grid-Tablet, .grid-Relojes{
+    display: grid;
+    grid-template-rows: repeat(1, 2fr);
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+    align-items: baseline;
+    align-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.grid-Celulares div,.grid-Tablet div, .grid-Relojes div{
+    background-color: white;
+    border-radius: 1em;
+}
+
+.grid-Celulares div:hover, .grid-Tablet div:hover, .grid-Relojes div:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+.grid-Celulares img{
+    height: 400px;
+}
+
+.grid-Tablet img{
+    width: 300px;
+    height: 400px;
+}
+.grid-Relojes img{
+    width: 300px;
+    height: 400px;
+}
+
+.seccionProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seccionProductos p{
+    padding: 8px;
+}
+
+.seccionProductos a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #9c9c9c;
+    margin-right: 27px;
+    padding: 20px;
+}
+
+.seccionProductos a:hover{
+    color: #4b6b9c;
+}
+.seccionProductos img:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.productosMarcas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 40px;
+    margin-bottom: 80px;
+}
+
+
+/*Ofertas*/
+
+.grid-Ofertas{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: baseline;
+    align-content: space-between;
+    margin: 20px;
+}
+
+.grid-Ofertas div{
+    background-color: white;
+    border-radius: 1em;
+}
+
+.grid-Ofertas div:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+.grid-Ofertas img{
+    width: 300px;
+    height: 400px;
+}
+
+.grid-Ofertas p{
+    align-self: end;
+}
+
+.oferItem2 img, .oferItem3 img, .oferItem6 img, .oferItem7 img{
+    width: 200px;
+}
+
+.precioAnterior{
+    text-decoration: line-through;
+    color: #9c9c9c;
+    font-size: 1.2rem;
+}
+
+
+/*CONTACTO*/
+
+.fondoContacto{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fondoContacto div{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-15%, -50%);
+    border-bottom: 4px solid #5c268c;
+}
+
+.fondoContacto img{
+    width: 1348px;
+    height: 300px;
+}
+
+.fondoContacto h1{
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+.seccionFormulario{
+    margin: 50px;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    padding: 10px 30px;
+}
+
+.p-3 h3{
+    color: #5c268c;
+}
+
+.container h3{
+    padding: 20px;
+}
+
+.formButton button{
+    width: 370px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #5C258D ;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+}
+
+.formButton button:hover{
+    background-color: #4524A3;
+    color: white;
+}
+
+.contacto-redesSociales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-right: 10px;    
+}
+
+.contacto-redesSociales img{
+    padding: 20px;
+}
+
+.contacto-Mensajeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin:50px;
+}
+
+.contacto-Mensajeria div{
+    background-color: whitesmoke;
+    padding-top: 50px;
+    height: 200px;
+}
+
+.contacto-Mensajeria p{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.form-Suscribete{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.form-Suscribete p{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+
+
+/*-------------Quienes Somos--------------*/
+
+.fondoQuienes-somos{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fondoQuienes-somos div{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-15%, -50%);
+    border-bottom: 4px solid #5c268c;
+}
+
+.fondoQuienes-somos img{
+    width: 1348px;
+    height: 300px;
+}
+
+.fondoQuienes-somos h1{
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+.seccionQuienessomos p{
+    font-weight: 500px;
+}
+
+.seccionQuienessomos h2{
+    font-size: 1.4rem;
+    border-bottom: 2px solid #5c268c;
+    margin-right: 450px;
+}
+
+.textoQuienessomos{
+    text-align: justify;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.imgQuienessomos-lateral{
+    float: right;
+    width: 400px;
+    padding-right: 80px;
+    margin: 20px;
+}
+
+
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1024px) {
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5 , auto); ;
+        grid-template-areas: "contHeader contHeader"
+                             "contMain contMain"
+                             "contMain contMain"
+                             "contMain contMain"
+                             "contFooter contFooter";
+    }
+    
+    .body h3{
+        font-size: 20px;
+    }
+    
+    header{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;        
+        background-color: #799f0c;
+        margin: auto;
+    }
+
+    .navMenu{
+        margin: 20px;
+    }
+
+    .submitBuscador input{
+        width: 500px;
+    }
+
+    .headInicio a img{
+        width: 200px;
+    }
+
+    .grid-masVendido img, .grid-Lanzamiento img, .grid-algunasOfertas img, .grid-Celulares img, .grid-Relojes img{
+        width: 70%;
+    }
+
+    .grid-Tablet img{
+        width: 95%;
+    }
+
+    .lanzItem1 img, .lanzItem2 img, .algOfertas-item1 img, .algOfertas-item3 img, .celItem6 img{
+        width: 300px;
+        height: 435px;
+    }
+    
+    .relItem4{
+        height: 535px;
+    }
+
+    .tabletItem6{
+        height: 585px;
+    }
+
+    .seccionNovedades iframe{
+        width: 100%;
+    }
+
+    .seccionProductos img{
+        width: 50px;
+    }
+
+    .grid-Ofertas{
+        grid-template-rows: repeat(2, 2fr);
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    .grid-Ofertas img{
+        width: 70%;
+    }
+
+    .oferItem4{
+        height: 642px;
+    }
+
+    .imgQuienessomos img{
+        width: 95%;
+    }
+
+    .seccionExtra img{
+        width: 30%;
+    }
+
+    .seccionExtra{
+        padding-right: 50px;
+    }
+
+    .imgQuienessomos img{
+        width: 500px;
+        height: 500px;
+    }
+
+    .textoQuienessomos {
+        font-size: 14px;
+    }
+}
+
+
+@media screen  and (min-width: 480px) and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 480px){
+
+}
