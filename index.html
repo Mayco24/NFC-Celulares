@@ -13,7 +13,7 @@
     <meta name="keywords" content="Nfc Celulares, Celulares, Tablet, Relojes, Smartphone,
          Smartwatch, Novedades, Tienda de Celulares">
     <!--Icono-->
-    <link rel="shortcut icon" href="/Imagenes/Logo.ico"/>
+    <link rel="shortcut icon" href="/Imagenes/Logo.ico" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,80 +33,99 @@
     <div>
         <div class="contenedor">
             <header class="contHeader">
-                <!--Logo de la Pagina-->
-                <div class="headInicio">
-                    <div class="animate__animated animate__zoomIn">
-                        <a href="index.html"><img src="Imagenes/Logo de inicio.png" alt="Imagen Logo de la Pagina "></a>
-                    </div>
-                </div>
-                <!--Menu-->
-                <nav>
-                    <ul>
-                        <li><a href="productos.html">PRODUCTOS</a></li>
-                        <li><a href="ofertas.html">OFERTAS</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
-                        <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
-                    </ul>
-                </nav>
-                <!--Buscador-->
-                <div class="botonesInicio">
-
-                    <form action="" class="submitBuscador">
-                        <input type="search" name="Buscador" placeholder="¿Que buscas?">
-                        <button><img src="./Imagenes/ico/search.png" alt="Icono Boton buscador"></button>
-                    </form>
-                </div>
-                <div class="botonesLateral">
-                    <button type="button" class="btn btn-link position-relative"><img
-                            src="./Imagenes/ico/carrito-de-compras.png" alt="Icono Carrito de Compra"> <span
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-link">
-                            <span class="visually-hidden">unread messages</span></span>
-                    </button>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#myModal"><img
-                            src="./Imagenes/ico/cuenta_de_usuario.png" alt="Icono Carrito de Compra">
-                    </button>
-                    <!-- Modal -->
-                    <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title">Iniciar Sesión</h3>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body usuarioColor">
-                                    <a href="index.html"><img src="/Imagenes/Logo de inicio.png" alt="Imagen logo inicio"></a>
-                                    <form action="">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                <input type="text" class="form-control" name="Usuario"
-                                                    placeholder="Usuario" required="required">
+                <nav class="navbar navbar-expand-lg header__nav">
+                    <div class="container-fluid">
+                        <div class="header__nav--logo_Inicio animate__animated animate__zoomIn">
+                            <a class="header__nav--logo_Inicio--a" href="index.html"><img class="header__nav--logo_Inicio--a--img" src="Imagenes/Logo de inicio.png"
+                                    alt="Imagen Logo de la Pagina "></a>
+                        </div>
+                        <div>
+                            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="nav-menu-one navbar-collapse header__nav--menu" id="navbarNavDropdown">
+                            <ul class="navbar-nav header__nav--menu--ul">
+                                <li class="nav-item header__nav--menu--ul--li">
+                                    <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">PRODUCTOS</a>
+                                </li>
+                                <li class="nav-item header__nav--menu--ul--li">
+                                    <a class="nav-link header__nav--menu--ul--li--a" href="ofertas.html">OFERTAS</a>
+                                </li>
+                                <li class="nav-item header__nav--menu--ul--li">
+                                    <a class="nav-link header__nav--menu--ul--li--a" href="contacto.html">CONTACTO</a>
+                                </li>
+                                <li class="nav-item header__nav--menu--ul--li">
+                                    <a class="nav-link header__nav--menu--ul--li--a" href="quienessomos.html">QUIENES SOMOS</a>
+                                </li>
+                            </ul>
+                            <!--Buscador-->
+                            <div class="header__nav--botonesInicio">
+                                <form action="" class="header__nav--botonesInicio--form">
+                                    <input class="header__nav--botonesInicio--form--input" type="search" name="Buscador" placeholder="¿Que buscas?">
+                                    <button class="header__nav--botonesInicio--form--button"><img src="./Imagenes/ico/search.png" alt="Icono Boton buscador"></button>
+                                </form>
+                            </div>
+                            <div class="header__nav--botonesLateral">
+                                <button type="button" class="btn btn-link position-relative header__nav--botonesLateral--button"><img
+                                        src="./Imagenes/ico/carrito-de-compras.png" alt="Icono Carrito de Compra"> <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-link">
+                                        <span class="visually-hidden">unread messages</span></span>
+                                </button>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-link header__nav--botonesLateral--button" data-bs-toggle="modal"
+                                    data-bs-target="#myModal"><img src="./Imagenes/ico/cuenta_de_usuario.png"
+                                        alt="Icono Carrito de Compra">
+                                </button>
+                                <!-- Modal -->
+                                <div id="myModal" class="modal fade header__nav--botonesLateral--modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog header__nav--botonesLateral--modal-dialog">
+                                        <div class="modal-content header__nav--botonesLateral--modal-content">
+                                            <div class="modal-header header__nav--botonesLateral--modal-header">
+                                                <h3 class="modal-title">Iniciar Sesión</h3>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body header__nav--botonesLateral--modal-body">
+                                                <a class="header__nav--botonesLateral--modal-body--a" href="index.html"><img class="header__nav--botonesLateral--modal-body--a--img" src="/Imagenes/Logo de inicio.png"
+                                                        alt="Imagen logo inicio"></a>
+                                                <form action="" class="header__nav--botonesLateral--modal-body--form">
+                                                    <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                        <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                            <span class="input-group-addon"></i></span>
+                                                            <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Usuario"
+                                                                placeholder="Usuario" required="required">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                        <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                            <span class="input-group-addon"></span>
+                                                            <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Contraseña"
+                                                                placeholder="Contraseña" required="required">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                        <button class="header__nav--botonesLateral--modal-body--form--form-group--button" type="submit"
+                                                            class="btn btn-secondary btn-block btn-lg">Iniciar
+                                                            Sesión</button>
+                                                    </div>
+                                                    <p class="hint-text header__nav--botonesLateral--modal-body--form--p"><a href="#" class="header__nav--botonesLateral--modal-body--form--p--a">¿Olvidaste tu contraseña?</a></p>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer header__nav--botonesLateral--modal-footer">
+                                                <h4 class="header__nav--botonesLateral--modal-footer--h4">¿No tienes una cuenta?</h4><a class="header__nav--botonesLateral--modal-footer--a" href="#">Creé una Aquí</a>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                <input type="text" class="form-control" name="Contraseña"
-                                                    placeholder="Contraseña" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <button class="buttonIngresar" type="submit"
-                                                class="btn btn-secondary btn-block btn-lg">Iniciar Sesión</button>
-                                        </div>
-                                        <p class="hint-text"><a href="#">¿Olvidó su contraseña?</a></p>
-                                    </form>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">¿No tienes una cuenta?<a href="#">Creé una Aquí</a></div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </nav>
             </header>
-
             <!--Secciones-->
             <main class="contMain">
                 <div class="seccionCarrusel">
@@ -148,18 +167,18 @@
                         <h2>Mas Vendido</h2>
                         <div class="grid-masVendido">
                             <div class="masVendido-item1">
-                                <img src="Imagenes/Celulares/Samsung A02.png" alt="Samsung A02" />
+                                <img class="animate__animated animate__bounceInLeft" src="Imagenes/Celulares/Samsung A02.png" alt="Samsung A02" />
                                 <h3>Samsung Galaxy A02s</h3>
                                 <p class="colorPrecio"><strong>$ 26.999</strong></p>
                             </div>
                             <div class="masVendido-item2">
-                                <img src="imagenes/Celulares/Xiaomi Redmi Note 10 5G Dual SIM 128.png"
+                                <img class="animate__animated animate__bounceInUp" src="Imagenes/Celulares/Xiaomi Redmi Note 10 5G Dual SIM 128.png"
                                     alt="Xiaomi Redmi Note 10" />
                                 <h3>Xiaomi Redmi Note 10</h3>
                                 <p class="colorPrecio"><strong>$ 42.999</strong></p>
                             </div>
                             <div class="masVendido-item3">
-                                <img src="imagenes/Celulares/Samsung A32.png" alt="Samsung A32">
+                                <img class="animate__animated animate__bounceInRight" src="Imagenes/Celulares/Samsung A32.png" alt="Samsung A32">
                                 <h3>Samsung Galaxy Awesome A32</h3>
                                 <p class="colorPrecio"><strong>$ 44.999</strong></p>
                             </div>
@@ -171,19 +190,22 @@
                         <h2>Lanzamiento</h2>
                         <div class="grid-Lanzamiento">
                             <div class="lanzItem1">
-                                <img src="Imagenes/Relojes/watch samsung 4.png" alt=" Imagen Reloj Galaxy Watch4">
+                                <img class="animate__animated animate__lightSpeedInLeft" src="Imagenes/Relojes/watch samsung 4.png" alt=" Imagen Reloj Galaxy Watch4">
+                                <p class="nuevoLanzamiento">Nuevo</p>
                                 <h3>Samsung Galaxy Watch4 Classic</h3>
                                 <p class="colorPrecio"><strong>$ 56.999</strong></p>
                             </div>
                             <div class="lanzItem2">
-                                <img src="Imagenes/Celulares/Xiaomi Mi 11 128GB.png" alt=" Imagen Xiaomi Mi 11">
+                                <img class="animate__animated animate__zoomIn" src="Imagenes/Celulares/Xiaomi Mi 11 128GB.png" alt=" Imagen Xiaomi Mi 11">
                                 <h3>Xiaomi Redmi Note 11</h3>
+                                <p class="nuevoLanzamiento1">Nuevo</p>
                                 <p class="colorPrecio"><strong>$ 91.999</strong></p>
                             </div>
                             <div class="lanzItem3">
-                                <img src="Imagenes/Celulares/Moto G100 128 Gb Verde Boreal 8 Gb Ram.png"
+                                <img class="animate__animated animate__lightSpeedInRight" src="Imagenes/Celulares/Moto G100 128 Gb Verde Boreal 8 Gb Ram.png"
                                     alt="Motorola G100">
                                 <h3>Moto G100</h3>
+                                <p class="nuevoLanzamiento2">Nuevo</p>
                                 <p class="colorPrecio"><strong>$ 44.999</strong></p>
                             </div>
                         </div>
@@ -194,16 +216,17 @@
                         <h2>Algunas Ofertas</h2>
                         <div class="grid-algunasOfertas">
                             <div class="algOfertas-item1">
-                                <img src="Imagenes/Relojes/Samsung Galaxy Fit2 (Bluetooth) 1.1 caja 46.6mm de plástico malla black de tpu y bisel black SM-R220.png"
+                                <img class="animate__animated animate__lightSpeedInLeft" src="Imagenes/Relojes/Samsung Galaxy Fit2 (Bluetooth) 1.1 caja 46.6mm de plástico malla black de tpu y bisel black SM-R220.png"
                                     alt="Imagen Samsung Galaxy Fit2">
                                 <h3>Samsung Galaxy Fit2</h3>
                                 <p class="colorPrecio">
                                     <strong><span class="precioAnterior">Antes $5999</span></strong>
                                     <br>
-                                    <strong>Ahora $4.999</strong></p>
+                                    <strong>Ahora $4.999</strong>
+                                </p>
                             </div>
                             <div class="algOfertas-item2">
-                                <img src="Imagenes/Celulares/Moto G30 128 GB gris tornasol 4 GB RAM.png"
+                                <img class="animate__animated animate__zoomIn" src="Imagenes/Celulares/Moto G30 128 GB gris tornasol 4 GB RAM.png"
                                     alt="Imagen Moto G30">
                                 <h3>Moto G30</h3>
                                 <p class="colorPrecio">
@@ -213,7 +236,7 @@
                                 </p>
                             </div>
                             <div class="algOfertas-item3">
-                                <img src="imagenes/tablet/tablet-samsung-galaxy-tab-a7_opt.png"
+                                <img class="animate__animated animate__lightSpeedInRight" src="Imagenes/tablet/tablet-samsung-galaxy-tab-a7_opt.png"
                                     alt="Imagen Tablet Samsung Galaxy">
                                 <h3>Samsung Galaxy Tab A7</h3>
                                 <p class="colorPrecio">
@@ -226,8 +249,8 @@
                     </section>
                 </div>
                 <section>
+                    <h2 class="seccionNovedadesTitulo">Novedades</h2>
                     <div class="seccionNovedades">
-                        <h2 class="seccionNovedadesTitulo">Novedades</h2>
                         <div class="novedadesSamsung">
                             <iframe width="760" height="400" src="https://www.youtube.com/embed/Plte1n8Pl90"
                                 title="YouTube video player" frameborder="0"
@@ -293,13 +316,44 @@
 
                 <section>
                     <div class="seccionHydrogel wow animate__animated animate__backInDown">
-                        <img src="./Imagenes/Hidrogel.png" alt="Imagen Hidrogel">
-                        <h2>Hydrogel</h2>
-                        <p>El hydrogel es una película suave hecha de poliuterano flexible y de alta ductilidad,
-                            está hecho por un tipo de resina que es lo que realmente aporta la protección al móvil.
-                            Además tu celular no pierde sensibilidad, su pantalla conserva el brillo y conserva
-                            también la velocidad en el uso del táctil.</p>
-                        <button><a href="https://web.whatsapp.com/">Pedí el tuyo</a></button>
+                        <div>
+                            <img class="hidrogelImagen" src="/Imagenes/Hidrogel.png" alt="Imagen Hidrogel">
+                        </div>
+                        <div class="hidrogelCaracteristicasParrafo">
+                            <h2>Hidrogel</h2>
+                            <p>La película de Hydrogel es un material altamente resistente, flexible, duradero, y
+                                garantiza una alta protección contra arañazos, golpes e impactos.
+                                Siliconado y flexible en su composición, se adhiere fácilmente a toda la superficie,
+                                incluido los bordes curvos que otro tipos de productos no protegen.
+                                Alta dureza, protege la pantalla de tu equipo de golpes, marcas y caídas. A diferencia
+                                de otros productos, en caso de un golpe no se daña.</p>
+                            <button><a href="https://web.whatsapp.com/" target="_blank">Obtenelo ya</a></button>
+                        </div>
+                        <div class="hidrogelCaracteristicasImagen">
+                            <div>
+                                <img src="/Imagenes/Hidrogel1.png" alt="Imagen Hidrogel-1 Caracteristicas">
+                                <p>Máxima protección</p>
+                            </div>
+                            <div>
+                                <img src="/Imagenes/Hidrogel2.png" alt="Imagen Hidrogel-2 Caracteristicas">
+                                <p>Alta Resistencia</p>
+                            </div>
+                            <div>
+                                <img src="/Imagenes/Hidrogel3.png" alt="Imagen Hidrogel-3 Caracteristicas">
+                                <p>Mejor calidad</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="seccionContactanos">
+                        <img src="/Imagenes/Contactanos.jpg" alt="Fondo Imagen Contactanos">
+                        <div class="seccionContactanos-texto">
+                            <h2>QUEREMOS <br> <span style="color: #0f6d99;">CONOCERTE!</span> </h2>
+                            <p>Dejanos un mensaje y nos comunicaremos a la brevedad.</p>
+                            <button><a href="contacto.html">CONTACTANOS!</a></button>
+                        </div>
                     </div>
                 </section>
 
@@ -307,7 +361,7 @@
                     <div class="seccionChat">
                         <div class="btn-group" role="group">
                             <ul>
-                                <button id="btnGroupDrop1" type="button" class="btn btn-link dropdown-toggle"
+                                <button id="btnGroupDrop1" type="button" class="btn btn-transparent dropdown-toggle "
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <a href=""><img src="./Imagenes/Chat/mensaje.ico" alt="Imagen Mensaje"></a>
                                 </button>
@@ -329,59 +383,47 @@
                         <a href="#arriba"><img src="./Imagenes/ico/arriba.png" alt="Arriba"></a>
                     </div>
                 </section>
-
-                <section>
-                    <div class="seccionExtra">
-                        <div class="extra1">
-                            <img src="Imagenes/ico/entrega.png" alt="entrega">
-                            <p><strong>ENVIOS A TODO EL PAÍS</strong></p>
-                        </div>
-                        <div class="extra2">
-                            <img src="Imagenes/ico/caja-de-devolucion.png" alt="devolucion">
-                            <p><strong>30 Dias<br>Para devolver tu compra</strong></p>
-                        </div>
-                        <div class="extra3">
-                            <img src="Imagenes/ico/tarjeta-de-credito.png" alt="tarjeta-de-credito">
-                            <p><strong>Planes 18 y 12 cuotas</strong></p>
-                        </div>
-                    </div>
-                </section>
             </main>
             <footer class="contFooter">
-                <div class="piePagina">
+                <div class="footer__piepagina">
                     <!--Suscribete -->
-                    <div class="ftrSuscribete">
-                        <h2>Suscripción a newsletter</h2>
-                        <form action="">
-                            <p>Para mantenerte al tanto de nuevos<br> productos, ofertas y novedades,<br> ingresá tus datos a
+                    <div class="footer__piepagina--ftrSuscribete">
+                        <h2 class="footer__piepagina--ftrSuscribete--h2">Suscripción a newsletter</h2>
+                        <form action="" class="footer__piepagina--ftrSuscribete--form">
+                            <p class="footer__piepagina--ftrSuscribete--form--p">Para mantenerte al tanto de nuevos <br>
+                                productos, ofertas y novedades, <br> ingresá tus
+                                datos a
                                 continuación.</p>
-                            <input type="text" name="nombre" placeholder="Nombre">
-                            <input type="email" name="email" placeholder="Email">
-                            <button>Enviar</button>
+                            <input class="footer__piepagina--ftrSuscribete--form--input" type="text" name="nombre"
+                                placeholder="Nombre">
+                            <input class="footer__piepagina--ftrSuscribete--form--input" type="email" name="email"
+                                placeholder="Email">
+                            <button class="footer__piepagina--ftrSuscribete--form--button">Enviar</button>
                         </form>
                     </div>
                     <!--Mas Informacion-->
-                    <div class="ftrInformacion">
-                        <h2>Información</h2>
-                        <ul>
-                            <li>
+                    <div class="footer__piepagina--ftrInformacion">
+                        <h2 class="footer__piepagina--ftrInformacion--h2">Información</h2>
+                        <ul class="footer__piepagina--ftrInformacion--ul">
+                            <li class="footer__piepagina--ftrInformacion--ul--li">
                                 <!-- Button trigger modal -->
-                                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Envios</a>
+                                <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Envíos</a>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop" data-bs-backdrop="static"
                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                     aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                                        <div class="modal-content">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                        <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
                                             <div class="modal-header">
                                                 <img src="/Imagenes/ico/entrega.png" alt="Imagen de envios">
-                                                <h3 class="modal-title" id="staticBackdropLabel">Envios</h3>
+                                                <h3 class="modal-title" id="staticBackdropLabel">Envíos</h3>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body infoColor">
-                                                <p class="modalTextoInformacion">Cada vez que realices una compra a
+                                            <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">Cada vez que realices una compra a
                                                     través de
                                                     <strong>NFC Celulares</strong> podrás
                                                     elegir la modalidad de entrega que te resulte más cómoda y
@@ -396,20 +438,20 @@
                                                     la empresa responsable de la entrega, se puede realizar una
                                                     tercera visita o dejar el pedido en una sucursal.
 
-                                                <h4>Envío estándar</h4>
-                                                <p>
+                                                <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Envío estándar</h4>
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                     Si elegís esta opción de envío la entrega se realizará al
                                                     domicilio que indiques en tu compra.
                                                 </p>
 
-                                                <h4>Envío Prioritario</h4>
-                                                <p>
+                                                <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Envío Prioritario</h4>
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                     Si elegís esta opción de envío tenés la posibilidad con mas rapidez
                                                     tu envio con un periodo de entrega de 1 a 3 dias habiles segun el
                                                     origen y destino.
                                                 </p>
-                                                <p>
-                                                    <strong>Improtante: </strong> Si tu compra se encuentra pendiente de
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
+                                                    <strong>Importante: </strong> Si tu compra se encuentra pendiente de
                                                     validación, el plazo de envío comienza a regir una vez que el pedido
                                                     haya sido aprobado.
                                                 </p>
@@ -420,30 +462,32 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="footer__piepagina--ftrInformacion--ul--li">
                                 <!-- Button trigger modal -->
-                                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Devoluciones</a>
+                                <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop1">Devoluciones</a>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
+                                <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop1" data-bs-backdrop="static"
                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                     aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                                        <div class="modal-content">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                        <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
                                             <div class="modal-header">
-                                                <img src="/Imagenes/ico/caja-de-devolucion.png" alt="Imagen devoluciones">
+                                                <img src="/Imagenes/ico/caja-de-devolucion.png"
+                                                    alt="Imagen devoluciones">
                                                 <h3 class="modal-title" id="staticBackdropLabel">Devoluciones</h3>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body infoColor">
-                                                <p>
+                                            <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                     Para realizar el cambio contás con 30 días corridos a partir de la
                                                     recepción de tu pedido; esta gestión podés solicitarla desde tu
                                                     cuenta de NFC Celulares.</p>
 
-                                                <h4>¿Cuándo entrego / retiran mi pedido?</h4>
-                                                <p class="modalTextoInformacion">
+                                                <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">¿Cuándo entrego / retiran mi pedido?</h4>
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                     Si solicitaste la opción de Retiro en domicilio, en el plazo de
                                                     hasta siete días hábiles, nuestro proveedor logístico pasará por el
                                                     domicilio indicado a retirar el /los productos, para entregarlos en
@@ -466,8 +510,8 @@
                                                     cambio procederá a anularse y el producto será reenviado al
                                                     domicilio indicado en la orden de compra.
                                                 </p>
-                                                <h4>¿Cómo es el procedimiento de reintegro de dinero?</h4>
-                                                <p class="modalTextoInformacion">La devolución de dinero se realizará al
+                                                <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">¿Cómo es el procedimiento de reintegro de dinero?</h4>
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">La devolución de dinero se realizará al
                                                     medio de pago utilizado en la
                                                     compra.
 
@@ -487,10 +531,10 @@
                                                     En caso que hayas abonado con cupón de crédito, la devolución se
                                                     realizará mediante la creación de un nuevo cupón cuya vigencia será
                                                     de 180 días.</p>
-                                                <p><strong>En caso que haya tenido algun incoveniente comunicate con
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p"><strong>En caso que haya tenido algun incoveniente comunicate con
                                                         nosotros </strong><br>
                                                     <strong>Mail: </strong>ventasmartphoneonline@gmail.com <br>
-                                                    <strong>Telefono: </strong>(+54) 351 687562011
+                                                    <strong>Teléfono: </strong>(+54) 351 687562011
                                                 </p>
 
                                             </div>
@@ -498,25 +542,27 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="footer__piepagina--ftrInformacion--ul--li">
                                 <!-- Button trigger modal -->
-                                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Formas de pago</a>
+                                <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop2">Formas de pago</a>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static"
+                                <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop2" data-bs-backdrop="static"
                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                     aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
+                                    <div class="modal-dialog modal-lg footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                        <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
                                             <div class="modal-header">
-                                                <img src="/Imagenes/ico/tarjeta-de-credito.png" alt="Imagen de tarjetas forma de pago">
+                                                <img src="/Imagenes/ico/tarjeta-de-credito.png"
+                                                    alt="Imagen de tarjetas forma de pago">
                                                 <h3 class="modal-title" id="staticBackdropLabel">Formas de Pago</h3>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body infoColor">
-                                                <h4 class="mediospagoTitulo">TARJETAS DE DÉBITO</h4>
-                                                <div class="imgTarjetasDebito">
+                                            <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                                <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">TARJETAS DE DÉBITO</h4>
+                                                <div class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--imgTarjetasDebito">
                                                     <img src="/Imagenes/ico/logo_visa.png" alt="Imagen logo Visa">
                                                     <img src="/Imagenes/ico/logo_mastercard.png"
                                                         alt="Imagen logo Mastercard">
@@ -526,7 +572,7 @@
                                                     <img src="/Imagenes/ico/logo_cordobesa.ico"
                                                         alt="Imagen logo Cordobesa">
                                                 </div>
-                                                <p class="modalTextoInformacion"><strong> 3 Cuotas sin Interés todos los
+                                                <p class=".footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p"><strong> 3 Cuotas sin Interés todos los
                                                         dias en todos los productos con tarjeta de débito. <br>
                                                         6 Cuotas sin Interés todos los dias en todos los productos con
                                                         tarjeta de débito. <br>
@@ -535,8 +581,8 @@
                                                         18 Cuotas sin Interés todos los dias en todos los productos con
                                                         tarjeta de débito.
                                                     </strong></p>
-                                                <h4 class="mediospagoTitulo">TARJETAS DE CRÉDITO</h4>
-                                                <div class="pagoTarjetaCredito">
+                                                <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">TARJETAS DE CRÉDITO</h4>
+                                                <div class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito">
                                                     <div>
                                                         <img src="/Imagenes/ico/logo_visa.png" alt="Imagen logo Visa">
                                                         <img src="/Imagenes/ico/logo_mastercard.png"
@@ -548,11 +594,11 @@
                                                             alt="Imagen logo Tarjeta Naranja">
                                                     </div>
                                                     <div>
-                                                        <p><strong>Cuotas Cero Interés</strong></p>
+                                                        <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito--p"><strong>3 | 6 | 12 y 18 Cuotas Cero Interés</strong></p>
                                                     </div>
                                                 </div>
-                                                <h4 class="mediospagoTitulo">OTROS MEDIOS DE PAGO</h4>
-                                                <div class="pagoOtrosMediospago">
+                                                <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">OTROS MEDIOS DE PAGO</h4>
+                                                <div>
                                                     <img src="/Imagenes/ico/logo_pagofacil.png"
                                                         alt="Imagen logo Pago Facil">
                                                     <img src="/Imagenes/ico/logo_rapipago.png"
@@ -566,25 +612,27 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="footer__piepagina--ftrInformacion--ul--li">
                                 <!-- Button trigger modal -->
-                                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Terminos y Condiciones</a>
+                                <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop3">Terminos y
+                                    Condiciones</a>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static"
+                                <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop3" data-bs-backdrop="static"
                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                     aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                                        <div class="modal-content">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                        <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
                                             <div class="modal-header">
                                                 <h3 class="modal-title" id="staticBackdropLabel">Terminos y Condiciones
                                                 </h3>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body infoColor">
-                                                <h4>Terminos y Condiciones</h4>
-                                                <p class="modalTextoInformacion">
+                                            <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                                <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Terminos y Condiciones</h4>
+                                                <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                     Bienvenido al sitio de internet
                                                     <strong>www.nfccelulares.com.ar</strong>. Los
                                                     términos y condiciones, que se describen a continuación (en adelante
@@ -749,23 +797,31 @@
                     </div>
 
                     <!--Mas informacion-->
-                    <div class="ftrSecciones">
-                        <h2>Secciones</h2>
-                        <ul>
-                            <li><a href="productos.html">Productos</a></li>
-                            <li><a href="ofertas.html">Ofertas</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                            <li><a href="quienessomos.html">Quienes Somos</a></li>
+                    <div class="footer__piepagina--ftrSecciones">
+                        <h2 class="footer__piepagina--ftrSecciones--h2">Secciones</h2>
+                        <ul class="footer__piepagina--ftrSecciones--ul">
+                            <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="productos.html">Productos</a></li>
+                            <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="ofertas.html">Ofertas</a></li>
+                            <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="contacto.html">Contacto</a></li>
+                            <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="quienessomos.html">Quienes Somos</a></li>
                         </ul>
                     </div>
 
-                    <div class="ftrLogo">
-                        <img src="Imagenes/Logo de inicio.png" alt="Imagen Logo de la Pagina ">
-                        <p>Copyright NFC Celulares 2021 <br> Todos los derechos reservados.</p>
-                        <div>
-                            <a href="https://facebook.com" target="_blank"><img src="/Imagenes/ico/facebook.svg" alt="Logo de Facebook"></a>
-                            <a href="https://instagram.com" target="_blank"><img src="/Imagenes/ico/instagram.svg" alt="Logo de Instragram"></a>
-                            <a href="https://twitter.com" target="_blank"><img src="/Imagenes/ico/twitter.svg" alt="Logo de Twitter"></a>
+                    <div class="footer__piepagina--ftrLogo">
+                        <img class="footer__piepagina--ftrLogo--img" src="Imagenes/Logo de inicio.png" alt="Imagen Logo de la Pagina ">
+                        <p class="footer__piepagina--ftrLogo--p">Copyright NFC Celulares 2021 <br> Todos los derechos reservados.</p>
+                        <div class="footer__piepagina--ftrLogo--redes_sociales">
+                            <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://facebook.com" target="_blank">
+                                <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/facebook.svg"
+                                    alt="Logo de Facebook">
+                                </a>
+                            <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://instagram.com" target="_blank">
+                                <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/instagram.svg"
+                                    alt="Logo de Instragram">
+                                </a>
+                            <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://twitter.com" target="_blank">
+                                <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/twitter.svg"
+                                    alt="Logo de Twitter"></a>
                         </div>
                     </div>
                 </div>
@@ -785,6 +841,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
         integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -28,78 +28,98 @@
 <body>
     <div class="contenedor">
         <header class="contHeader">
-            <!--Logo de la Pagina-->
-            <div class="headInicio">
-                <div class="animate__animated animate__zoomIn">
-                    <a href="index.html"><img src="Imagenes/Logo de inicio.png" alt="Imagen Logo de la Pagina "></a>
-                </div>
-            </div>
-            <!--Menu-->
-            <nav>
-                <ul>
-                    <li><a href="productos.html">PRODUCTOS</a></li>
-                    <li><a href="ofertas.html">OFERTAS</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
-                </ul>
-            </nav>
-            <!--Buscador-->
-            <div class="botonesInicio">
-
-                <form action="" class="submitBuscador">
-                    <input type="search" name="Buscador" placeholder="¿Que buscas?">
-                    <button><img src="./Imagenes/ico/search.png" alt="Icono Boton buscador"></button>
-                </form>
-            </div>
-            <div class="botonesLateral">
-                <button type="button" class="btn btn-link position-relative"><img
-                        src="./Imagenes/ico/carrito-de-compras.png" alt="Icono Carrito de Compra"> <span
-                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-link">
-                        <span class="visually-hidden">unread messages</span></span>
-                </button>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#myModal"><img
-                        src="./Imagenes/ico/cuenta_de_usuario.png" alt="Icono Carrito de Compra">
-                </button>
-                <!-- Modal -->
-                <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title">Iniciar Sesión</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body usuarioColor">
-                                <a href="index.html"><img src="/Imagenes/Logo de inicio.png" alt="Imagen logo inicio"></a>
-                                <form action="">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                            <input type="text" class="form-control" name="Usuario"
-                                                placeholder="Usuario" required="required">
+            <nav class="navbar navbar-expand-lg header__nav">
+                <div class="container-fluid">
+                    <div class="header__nav--logo_Inicio animate__animated animate__zoomIn">
+                        <a class="header__nav--logo_Inicio--a" href="index.html"><img class="header__nav--logo_Inicio--a--img" src="Imagenes/Logo de inicio.png"
+                                alt="Imagen Logo de la Pagina "></a>
+                    </div>
+                    <div>
+                        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="nav-menu-one navbar-collapse header__nav--menu" id="navbarNavDropdown">
+                        <ul class="navbar-nav header__nav--menu--ul">
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="ofertas.html">OFERTAS</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="quienessomos.html">QUIENES SOMOS</a>
+                            </li>
+                        </ul>
+                        <!--Buscador-->
+                        <div class="header__nav--botonesInicio">
+                            <form action="" class="header__nav--botonesInicio--form">
+                                <input class="header__nav--botonesInicio--form--input" type="search" name="Buscador" placeholder="¿Que buscas?">
+                                <button class="header__nav--botonesInicio--form--button"><img src="./Imagenes/ico/search.png" alt="Icono Boton buscador"></button>
+                            </form>
+                        </div>
+                        <div class="header__nav--botonesLateral">
+                            <button type="button" class="btn btn-link position-relative header__nav--botonesLateral--button"><img
+                                    src="./Imagenes/ico/carrito-de-compras.png" alt="Icono Carrito de Compra"> <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-link">
+                                    <span class="visually-hidden">unread messages</span></span>
+                            </button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link header__nav--botonesLateral--button" data-bs-toggle="modal"
+                                data-bs-target="#myModal"><img src="./Imagenes/ico/cuenta_de_usuario.png"
+                                    alt="Icono Carrito de Compra">
+                            </button>
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade header__nav--botonesLateral--modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog header__nav--botonesLateral--modal-dialog">
+                                    <div class="modal-content header__nav--botonesLateral--modal-content">
+                                        <div class="modal-header header__nav--botonesLateral--modal-header">
+                                            <h3 class="modal-title">Iniciar Sesión</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body header__nav--botonesLateral--modal-body">
+                                            <a class="header__nav--botonesLateral--modal-body--a" href="index.html"><img class="header__nav--botonesLateral--modal-body--a--img" src="/Imagenes/Logo de inicio.png"
+                                                    alt="Imagen logo inicio"></a>
+                                            <form action="" class="header__nav--botonesLateral--modal-body--form">
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                        <span class="input-group-addon"></i></span>
+                                                        <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Usuario"
+                                                            placeholder="Usuario" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Contraseña"
+                                                            placeholder="Contraseña" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <button class="header__nav--botonesLateral--modal-body--form--form-group--button" type="submit"
+                                                        class="btn btn-secondary btn-block btn-lg">Iniciar
+                                                        Sesión</button>
+                                                </div>
+                                                <p class="hint-text header__nav--botonesLateral--modal-body--form--p"><a href="#" class="header__nav--botonesLateral--modal-body--form--p--a">¿Olvidaste tu contraseña?</a></p>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer header__nav--botonesLateral--modal-footer">
+                                            <h4>¿No tienes una cuenta?</h4><a class="header__nav--botonesLateral--modal-footer--a" href="#">Creé una Aquí</a>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                            <input type="text" class="form-control" name="Contraseña"
-                                                placeholder="Contraseña" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="buttonIngresar" type="submit"
-                                            class="btn btn-secondary btn-block btn-lg">Iniciar Sesión</button>
-                                    </div>
-                                    <p class="hint-text"><a href="#">¿Olvidó su contraseña?</a></p>
-                                </form>
+                                </div>
                             </div>
-                            <div class="modal-footer">¿No tienes una cuenta?<a href="#">Creé una Aquí</a></div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <main class="contMain">
             <section>
@@ -110,84 +130,77 @@
                     </div>
                 </div>
                 <!--Mapa del sitio-->
-                <iframe
+                <iframe class="contactoIframe"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27279.086453152133!2d-64.4811232076418!3d-31.27925376278407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d7b163a5f0c83%3A0xa72544781167f4c!2sSanta%20Mar%C3%ADa%20de%20Punilla%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1631323735011!5m2!1ses-419!2sar"
                     width="1200" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section>
             <!--Formulario de Contacto-->
             <section>
                 <div class="seccionFormulario">
-                    <form action="" class="p-3 mb-2 bg-light text-dark">
+                    <form action="" class="textFormulario bg-light text-dark">
                         <h3>Completá el formulario y un representante de NFC Celulares te responderá a la brevedad.</h3>
                         <div class="container">
-                            <div>
-                                <!--Nombre Completo-->
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>Nombre</h3>
-                                        <input type="text" class="form-control" placeholder="Nombre(s)"
-                                            aria-label="First name" required>
-                                    </div>
-                                    <div class="col">
-                                        <h3>Apellido</h3>
-                                        <input type="text" class="form-control" placeholder="Apellido(s)"
-                                            aria-label="Last name" required>
-                                    </div>
-                                </div>
+
+                            <!--Nombre Completo-->
+
+                            <div class="formNombre">
+                                <h3>Nombre</h3>
+                                <input type="text" class="form-control" placeholder="Nombre*" aria-label="First name"
+                                    required>
                             </div>
-                            <div>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>DNI</h3>
-                                        <input type="tel" class="form-control" placeholder="Número de DNI"
-                                            aria-label="First name" required pattern="[0-9]">
-                                    </div>
-                                    <div class="col">
-                                        <!--Email-->
-                                        <h3>Email</h3>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="name@example.com" required>
-                                    </div>
-                                </div>
+                            <div class="formApellido">
+                                <h3>Apellido</h3>
+                                <input type="text" class="form-control " placeholder="Apellido*"
+                                    aria-label="Last name" required>
                             </div>
-                            <div>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>Teléfono</h3>
-                                        <input type="tel" class="form-control" placeholder="Número de Teléfono"
-                                            aria-label="First name" required pattern="[0-9]+">
-                                    </div>
-                                    <div class="col">
-                                        <!--Horario de Contacto-->
-                                        <h3>Horario de Consulta</h3>
-                                        <select class="form-select">
-                                            <option selected>Seleccionar</option>
-                                            <option value="07:00">07:00</option>
-                                            <option value="08:00">08:00</option>
-                                            <option value="09:00">09:00</option>
-                                            <option value="10:00">10:00</option>
-                                            <option value="11:00">11:00</option>
-                                            <option value="12:00">12:00</option>
-                                            <option value="13:00">13:00</option>
-                                            <option value="14:00">14:00</option>
-                                            <option value="15:00">15:00</option>
-                                            <option value="16:00">16:00</option>
-                                            <option value="17:00">17:00</option>
-                                            <option value="18:00">18:00</option>
-                                            <option value="19:00">19:00</option>
-                                            <option value="20:00">20:00</option>
-                                            <option value="21:00">21:00</option>
-                                            <option value="22:00">22:00</option>
-                                            <option value="23:00">23:00</option>
-                                            <option value="00:00">00:00</option>
-                                        </select>
-                                    </div>
-                                </div>
+
+                            <div class="formDNI">
+                                <h3>DNI</h3>
+                                <input type="number" class="form-control" placeholder="Número de DNI"
+                                    aria-label="First name" required pattern="[0-9]">
                             </div>
-                            <div>
+                            <div class="formEmail">
+                                <!--Email-->
+                                <h3>Email</h3>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Email*" required>
+                            </div>
+
+
+                            <div class="formTel">
+                                <h3>Teléfono</h3>
+                                <input type="tel" class="form-control" placeholder="Número de Teléfono"
+                                    aria-label="First name" required pattern="[0-9]+">
+                            </div>
+                            <div class="formHorario">
+                                <!--Horario de Contacto-->
+                                <h3>Horario de Consulta</h3>
+                                <select class="form-select">
+                                    <option selected>Seleccionar</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                    <option value="00:00">00:00</option>
+                                </select>
+                            </div>
+                            <div class="formConsulta">
                                 <!--Consulta-->
                                 <h3>Consulta</h3>
-                                <div class="mb-3">
+                                <div>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" size="10"
                                         placeholder="Ingrese Consulta..." required></textarea>
                                 </div>
@@ -196,77 +209,91 @@
                                 <button type="submit" size="50" class="btn btn-link">Enviar</button>
                             </div>
                         </div>
+                        
                 </div>
             </section>
             <section>
+                <h3 class="contacto-redesSocialesTitulo">Seguinos y escríbenos</h3>
                 <div class="contacto-redesSociales">
                     <div><a href="https://facebook.com" target="_blank"><img src="Imagenes/ico/facebook-contacto.png"
-                        alt="Imagen Facebook" fill="gray"></a>
+                                alt="Imagen Facebook" fill="gray"></a>
                     </div>
                     <div><a href="https://instagram.com" target="_blank"><img src="Imagenes/ico/instagram-contacto.png"
                                 alt="Imagen Instagram"></a></div>
                     <div><a href="https://twitter.com" target="_blank"><img src="Imagenes/ico/twitter-contacto.png"
                                 alt="Imagen Twitter"></a></div>
-                    <div><a href="https://web.whatsapp.com/" target="_blank"><img src="Imagenes/ico/whatsapp-contacto.png"
-                                alt="Imagen Whatsapp"></a></div>
-                    <div><a href="https://www.messenger.com/" target="_blank"><img src="Imagenes/ico/messenger-contacto.png"
-                                alt="Imagen Messenger"></a></div>
-                    <div><a href="https://web.telegram.org/" target="_blank"><img src="Imagenes/ico/telegram-contacto.png"
-                                alt="Imagen Telegram"></a></div>
+                    <div><a href="https://web.whatsapp.com/" target="_blank"><img
+                                src="Imagenes/ico/whatsapp-contacto.png" alt="Imagen Whatsapp"></a></div>
+                    <div><a href="https://www.messenger.com/" target="_blank"><img
+                                src="Imagenes/ico/messenger-contacto.png" alt="Imagen Messenger"></a></div>
+                    <div><a href="https://web.telegram.org/" target="_blank"><img
+                                src="Imagenes/ico/telegram-contacto.png" alt="Imagen Telegram"></a></div>
                 </div>
             </section>
             <section>
                 <div class="contacto-Mensajeria">
-                    <div>
+                    <div class="contacto-MensajeriaColor-Mensaje" >
                         <img src="Imagenes/ico/correo-electronico.png" alt="Imagen mensaje">
-                        <p>ventasmartphoneonline@gmail.com</p>
+                        <h4 class="contacto-MensajeriaColor">Escribinos</h4>
+                        <p>
+                            <a href="mailto:ventasmartphoneonline@gmail.com">ventasmartphoneonline@gmail.com</a>
+                        </p>
                     </div>
-                    <div>
+                    <div class="contacto-MensajeriaColor-Llamanos">
                         <img src="Imagenes/ico/telefono.png" alt="Imagen telefono">
+                        <h4 class="contacto-MensajeriaColor">Llamanos</h4>
                         <p>(+54) 351 687562011</p>
                     </div>
-                    <div>
+                    <div class="contacto-MensajeriaColor-Ubicacion">
                         <img src="Imagenes/ico/ubicacion.png" alt="Imagen ubicacion">
-                        <p>9 de Julio 540, Santa Maria de Punilla</p>
+                        <h4 class="contacto-MensajeriaColor">Ubícanos</h4>
+                        <p>
+                            <a href="https://goo.gl/maps/r7GSDxXNpgdxhxHn7" target="_blank">9 de Julio 640, Santa Maria de Punilla</a>
+                            </p>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="contFooter">
-            <div class="piePagina">
+            <div class="footer__piepagina">
                 <!--Suscribete -->
-                <div class="ftrSuscribete">
-                    <h2>Suscripción a newsletter</h2>
-                    <form action="" class="form-Suscribete">
-                        <p>Para mantenerte al tanto de nuevos<br> productos, ofertas y novedades,<br> ingresá tus datos a
+                <div class="footer__piepagina--ftrSuscribete">
+                    <h2 class="footer__piepagina--ftrSuscribete--h2">Suscripción a newsletter</h2>
+                    <div class="footer__piepagina--ftrSuscribete--form">
+                        <p class="footer__piepagina--ftrSuscribete--form--p">Para mantenerte al tanto de nuevos <br>
+                            productos, ofertas y novedades, <br> ingresá tus
+                            datos a
                             continuación.</p>
-                        <input type="text" name="nombre" placeholder="Nombre">
-                        <input type="email" name="email" placeholder="Email">
-                        <button>Enviar</button>
-                    </form>
+                        <input class="footer__piepagina--ftrSuscribete--form--input" type="text" name="nombre"
+                            placeholder="Nombre">
+                        <input class="footer__piepagina--ftrSuscribete--form--input" type="email" name="email"
+                            placeholder="Email">
+                        <button class="footer__piepagina--ftrSuscribete--form--button">Enviar</button>
+                        </div>
                 </div>
                 <!--Mas Informacion-->
-                <div class="ftrInformacion">
-                    <h2>Información</h2>
-                    <ul>
-                        <li>
+                <div class="footer__piepagina--ftrInformacion">
+                    <h2 class="footer__piepagina--ftrInformacion--h2">Información</h2>
+                    <ul class="footer__piepagina--ftrInformacion--ul">
+                        <li class="footer__piepagina--ftrInformacion--ul--li">
                             <!-- Button trigger modal -->
-                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Envios</a>
+                            <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Envíos</a>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                            <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop" data-bs-backdrop="static"
                                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                 aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                    <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
                                         <div class="modal-header">
                                             <img src="/Imagenes/ico/entrega.png" alt="Imagen de envios">
-                                            <h3 class="modal-title" id="staticBackdropLabel">Envios</h3>
+                                            <h3 class="modal-title" id="staticBackdropLabel">Envíos</h3>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
-                                            <p class="modalTextoInformacion">Cada vez que realices una compra a
+                                        <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">Cada vez que realices una compra a
                                                 través de
                                                 <strong>NFC Celulares</strong> podrás
                                                 elegir la modalidad de entrega que te resulte más cómoda y
@@ -281,20 +308,20 @@
                                                 la empresa responsable de la entrega, se puede realizar una
                                                 tercera visita o dejar el pedido en una sucursal.
 
-                                            <h4>Envío estándar</h4>
-                                            <p>
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Envío estándar</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                 Si elegís esta opción de envío la entrega se realizará al
                                                 domicilio que indiques en tu compra.
                                             </p>
 
-                                            <h4>Envío Prioritario</h4>
-                                            <p>
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Envío Prioritario</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                 Si elegís esta opción de envío tenés la posibilidad con mas rapidez
                                                 tu envio con un periodo de entrega de 1 a 3 dias habiles segun el
                                                 origen y destino.
                                             </p>
-                                            <p>
-                                                <strong>Improtante: </strong> Si tu compra se encuentra pendiente de
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
+                                                <strong>Importante: </strong> Si tu compra se encuentra pendiente de
                                                 validación, el plazo de envío comienza a regir una vez que el pedido
                                                 haya sido aprobado.
                                             </p>
@@ -305,30 +332,32 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="footer__piepagina--ftrInformacion--ul--li">
                             <!-- Button trigger modal -->
-                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Devoluciones</a>
+                            <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop1">Devoluciones</a>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
+                            <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop1" data-bs-backdrop="static"
                                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                 aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                    <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
                                         <div class="modal-header">
-                                            <img src="/Imagenes/ico/caja-de-devolucion.png" alt="Imagen devoluciones">
+                                            <img src="/Imagenes/ico/caja-de-devolucion.png"
+                                                alt="Imagen devoluciones">
                                             <h3 class="modal-title" id="staticBackdropLabel">Devoluciones</h3>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
-                                            <p>
+                                        <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                 Para realizar el cambio contás con 30 días corridos a partir de la
                                                 recepción de tu pedido; esta gestión podés solicitarla desde tu
                                                 cuenta de NFC Celulares.</p>
 
-                                            <h4>¿Cuándo entrego / retiran mi pedido?</h4>
-                                            <p class="modalTextoInformacion">
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">¿Cuándo entrego / retiran mi pedido?</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                 Si solicitaste la opción de Retiro en domicilio, en el plazo de
                                                 hasta siete días hábiles, nuestro proveedor logístico pasará por el
                                                 domicilio indicado a retirar el /los productos, para entregarlos en
@@ -351,8 +380,8 @@
                                                 cambio procederá a anularse y el producto será reenviado al
                                                 domicilio indicado en la orden de compra.
                                             </p>
-                                            <h4>¿Cómo es el procedimiento de reintegro de dinero?</h4>
-                                            <p class="modalTextoInformacion">La devolución de dinero se realizará al
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">¿Cómo es el procedimiento de reintegro de dinero?</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">La devolución de dinero se realizará al
                                                 medio de pago utilizado en la
                                                 compra.
 
@@ -372,10 +401,10 @@
                                                 En caso que hayas abonado con cupón de crédito, la devolución se
                                                 realizará mediante la creación de un nuevo cupón cuya vigencia será
                                                 de 180 días.</p>
-                                            <p><strong>En caso que haya tenido algun incoveniente comunicate con
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p"><strong>En caso que haya tenido algun incoveniente comunicate con
                                                     nosotros </strong><br>
                                                 <strong>Mail: </strong>ventasmartphoneonline@gmail.com <br>
-                                                <strong>Telefono: </strong>(+54) 351 687562011
+                                                <strong>Teléfono: </strong>(+54) 351 687562011
                                             </p>
 
                                         </div>
@@ -383,25 +412,27 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="footer__piepagina--ftrInformacion--ul--li">
                             <!-- Button trigger modal -->
-                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Formas de pago</a>
+                            <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop2">Formas de pago</a>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static"
+                            <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop2" data-bs-backdrop="static"
                                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                 aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
+                                <div class="modal-dialog modal-lg footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                    <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
                                         <div class="modal-header">
-                                            <img src="/Imagenes/ico/tarjeta-de-credito.png" alt="Imagen de tarjetas forma de pago">
+                                            <img src="/Imagenes/ico/tarjeta-de-credito.png"
+                                                alt="Imagen de tarjetas forma de pago">
                                             <h3 class="modal-title" id="staticBackdropLabel">Formas de Pago</h3>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
-                                            <h4 class="mediospagoTitulo">TARJETAS DE DÉBITO</h4>
-                                            <div class="imgTarjetasDebito">
+                                        <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">TARJETAS DE DÉBITO</h4>
+                                            <div class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--imgTarjetasDebito">
                                                 <img src="/Imagenes/ico/logo_visa.png" alt="Imagen logo Visa">
                                                 <img src="/Imagenes/ico/logo_mastercard.png"
                                                     alt="Imagen logo Mastercard">
@@ -411,7 +442,7 @@
                                                 <img src="/Imagenes/ico/logo_cordobesa.ico"
                                                     alt="Imagen logo Cordobesa">
                                             </div>
-                                            <p class="modalTextoInformacion"><strong> 3 Cuotas sin Interés todos los
+                                            <p class=".footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p"><strong> 3 Cuotas sin Interés todos los
                                                     dias en todos los productos con tarjeta de débito. <br>
                                                     6 Cuotas sin Interés todos los dias en todos los productos con
                                                     tarjeta de débito. <br>
@@ -420,8 +451,8 @@
                                                     18 Cuotas sin Interés todos los dias en todos los productos con
                                                     tarjeta de débito.
                                                 </strong></p>
-                                            <h4 class="mediospagoTitulo">TARJETAS DE CRÉDITO</h4>
-                                            <div class="pagoTarjetaCredito">
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">TARJETAS DE CRÉDITO</h4>
+                                            <div class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito">
                                                 <div>
                                                     <img src="/Imagenes/ico/logo_visa.png" alt="Imagen logo Visa">
                                                     <img src="/Imagenes/ico/logo_mastercard.png"
@@ -433,11 +464,11 @@
                                                         alt="Imagen logo Tarjeta Naranja">
                                                 </div>
                                                 <div>
-                                                    <p><strong> 3| 6 | 12 Cuotas Cero Interés</strong></p>
+                                                    <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito--p"><strong>3 | 6 | 12 y 18 Cuotas Cero Interés</strong></p>
                                                 </div>
                                             </div>
-                                            <h4 class="mediospagoTitulo">OTROS MEDIOS DE PAGO</h4>
-                                            <div class="pagoOtrosMediospago">
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">OTROS MEDIOS DE PAGO</h4>
+                                            <div>
                                                 <img src="/Imagenes/ico/logo_pagofacil.png"
                                                     alt="Imagen logo Pago Facil">
                                                 <img src="/Imagenes/ico/logo_rapipago.png"
@@ -451,25 +482,27 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="footer__piepagina--ftrInformacion--ul--li">
                             <!-- Button trigger modal -->
-                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Terminos y Condiciones</a>
+                            <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop3">Terminos y
+                                Condiciones</a>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static"
+                            <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop3" data-bs-backdrop="static"
                                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                 aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                    <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
                                         <div class="modal-header">
                                             <h3 class="modal-title" id="staticBackdropLabel">Terminos y Condiciones
                                             </h3>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
-                                            <h4>Terminos y Condiciones</h4>
-                                            <p class="modalTextoInformacion">
+                                        <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Terminos y Condiciones</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
                                                 Bienvenido al sitio de internet
                                                 <strong>www.nfccelulares.com.ar</strong>. Los
                                                 términos y condiciones, que se describen a continuación (en adelante
@@ -634,23 +667,31 @@
                 </div>
 
                 <!--Mas informacion-->
-                <div class="ftrSecciones">
-                    <h2>Secciones</h2>
-                    <ul>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="ofertas.html">Ofertas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <div class="footer__piepagina--ftrSecciones">
+                    <h2 class="footer__piepagina--ftrSecciones--h2">Secciones</h2>
+                    <ul class="footer__piepagina--ftrSecciones--ul">
+                        <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="productos.html">Productos</a></li>
+                        <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="ofertas.html">Ofertas</a></li>
+                        <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="contacto.html">Contacto</a></li>
+                        <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="quienessomos.html">Quienes Somos</a></li>
                     </ul>
                 </div>
 
-                <div class="ftrLogo">
-                    <img src="Imagenes/Logo de inicio.png" alt="Imagen Logo de la Pagina ">
-                    <p>Copyright NFC Celulares 2021 <br> Todos los derechos reservados.</p>
-                    <div>
-                        <a href="https://facebook.com" target="_blank"><img src="/Imagenes/ico/facebook.svg" alt="Logo de Facebook"></a>
-                        <a href="https://instagram.com" target="_blank"><img src="/Imagenes/ico/instagram.svg" alt="Logo de Instragram"></a>
-                        <a href="https://twitter.com" target="_blank"><img src="/Imagenes/ico/twitter.svg" alt="Logo de Twitter"></a>
+                <div class="footer__piepagina--ftrLogo">
+                    <img class="footer__piepagina--ftrLogo--img" src="Imagenes/Logo de inicio.png" alt="Imagen Logo de la Pagina ">
+                    <p class="footer__piepagina--ftrLogo--p">Copyright NFC Celulares 2021 <br> Todos los derechos reservados.</p>
+                    <div class="footer__piepagina--ftrLogo--redes_sociales">
+                        <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://facebook.com" target="_blank">
+                            <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/facebook.svg"
+                                alt="Logo de Facebook">
+                            </a>
+                        <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://instagram.com" target="_blank">
+                            <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/instagram.svg"
+                                alt="Logo de Instragram">
+                            </a>
+                        <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://twitter.com" target="_blank">
+                            <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/twitter.svg"
+                                alt="Logo de Twitter"></a>
                     </div>
                 </div>
             </div>
