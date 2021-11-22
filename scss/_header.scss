@@ -1,0 +1,151 @@
+header{
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .header__nav{
+        padding: 0;
+        .header__nav--logo_Inicio{
+            padding-left: 20px;
+            .header__nav--logo_Inicio--a{
+                .header__nav--logo_Inicio--a--img{
+                    width: 170px;
+                }
+            }
+        }
+        .header__nav--menu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            .header__nav--menu--ul{
+                .header__nav--menu--ul--li{
+                    display: inline-block;
+                    font-size: 18px;
+                    
+                    .header__nav--menu--ul--li--a{
+                        color: white;
+                        text-decoration: none;
+                        text-align: center;
+                        padding: 18px;
+                        &:hover{
+                            border-bottom: 3px solid white;
+                            color: whitesmoke;
+                        }
+                    }
+                }
+            }
+        }
+        .header__nav--botonesInicio{
+            padding: 5px;
+            .header__nav--botonesInicio--form{
+                .header__nav--botonesInicio--form--input {
+                    background-color: #5c268c;
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    font-size: 16px;
+                    height: 35px;
+                    width: 200px;
+                    transition: .3s linear;
+                    &:hover{
+                        width: 230px;
+                    }
+                    &::placeholder{
+                        color: white;
+                    }
+                    &:focus{
+                        border: 1.5px solid white;
+                        outline: none;
+                    }
+                    &:active{
+                        padding: 5px;
+                    } 
+                }
+                .header__nav--botonesInicio--form--button{
+                    background-color: transparent;
+                    position: absolute;
+                    top: 20px;
+                    right: 158px;
+                    border: none;
+                }
+            }
+        }
+        .header__nav--botonesLateral{
+            .header__nav--botonesLateral--button{
+                padding: 15px;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            .header__nav--botonesLateral--modal{
+                .header__nav--botonesLateral--modal-dialog{
+                    .header__nav--botonesLateral--modal-content{
+                        .header__nav--botonesLateral--modal-body{
+                            background-color: #4389a2;
+                            .header__nav--botonesLateral--modal-body--a{
+                                .header__nav--botonesLateral--modal-body--a--img{
+                                    text-align: center;
+                                    padding-left: 140px;
+                                    width: 300px;
+                                    margin:10px;
+                                }
+                            }
+                            .header__nav--botonesLateral--modal-body--form{
+                                .header__nav--botonesLateral--modal-body--form--form-group{
+                                    .header__nav--botonesLateral--modal-body--form--form-group--input-group{
+                                        .header__nav--botonesLateral--modal-body--form--form-group--input-group--input{
+                                            padding: 10px;
+                                            margin: 10px;
+                                            width: 10px;
+                                            &:focus{
+                                                border: 1.5px solid #5c268c;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    }
+                                    .header__nav--botonesLateral--modal-body--form--form-group--button{
+                                        width: 300px;
+                                        height: 60px;
+                                        margin-top: 8px;
+                                        margin-left: 80px;
+                                        background-color: #5c268c;
+                                        color: white;
+                                        border: none;
+                                        border-radius: 5px;
+                                        &:hover{
+                                            background-color: #4524A3;
+                                        }
+                                    }
+                                }
+                                .header__nav--botonesLateral--modal-body--form--p{
+                                    text-align: center;
+                                    margin-top: 20px;
+                                    .header__nav--botonesLateral--modal-body--form--p--a{
+                                        text-decoration: none;
+                                        color: whitesmoke;
+                                        &:hover{
+                                            color: #3F57B0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .header__nav--botonesLateral--modal-footer{
+                            padding-right: 110px;
+                            .header__nav--botonesLateral--modal-footer--a{
+                                color: #4389a2;
+                                text-decoration: none;
+                                &:hover{
+                                    color: #3F57B0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}

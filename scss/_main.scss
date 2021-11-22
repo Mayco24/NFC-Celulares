@@ -1,0 +1,914 @@
+main{
+    width: 100%;
+    .seccionCarrusel{
+        .carousel{
+            margin-bottom: 50px;
+            .carousel-inner{
+                img{
+                    @include block(1200px, 561px);
+                }
+            }
+        }
+    }
+    .seccionMasVendido{
+        section{
+            text-align: center;
+            .grid-masVendido{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                align-items: baseline;
+                margin: 20px;
+                div{
+                    background-color: $bg_blanco;
+                    border-radius: 1em;
+                    img{
+                        height: 380px;
+                    }
+                    .colorPrecio{
+                        font-size: 1.5rem;
+                        color: $bg_morado;
+                    }
+                }
+                
+            }
+    
+            h2{
+                display: inline-block;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    left: -500px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    right: -500px;
+                }
+            }
+        }
+    }
+
+    .seccionLanzamiento{
+        section{
+            text-align: center;
+            .grid-Lanzamiento{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                align-items: baseline;
+                margin: 20px;
+                div{
+                    background-color: $bg_blanco;
+                    border-radius: 1em;
+                    img{
+                        height: 380px;
+                    }
+                    .nuevoLanzamiento{
+                        position: absolute;
+                        top: 1460px;
+                        left: 35px;
+                        border-radius: 1rem;
+                        background-color: #92b843;
+                        color: whitesmoke;
+                        height: 25px;
+                        width: 60px;
+                    }
+                    .nuevoLanzamiento1{
+                        position: absolute;
+                        top: 1460px;
+                        left: 478px;
+                        border-radius: 1rem;
+                        background-color: #92b843;
+                        color: whitesmoke;
+                        height: 25px;
+                        width: 60px;
+                    }
+                    .nuevoLanzamiento2{
+                        position: absolute;
+                        top: 1460px;
+                        left: 925px;
+                        border-radius: 1rem;
+                        background-color: #92b843;
+                        color: whitesmoke;
+                        height: 25px;
+                        width: 60px;
+                    }
+                    .colorPrecio{
+                        font-size: 1.5rem;
+                        color: $bg_morado;
+                    }
+                }
+            }
+            h2{
+                display: inline-block;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    left: -500px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    right: -500px;
+                }
+            }
+        }
+    }
+    .seccionAlg-ofertas{
+        section{
+            text-align: center;
+            .grid-algunasOfertas{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                align-items: baseline;
+                margin: 20px;
+                div{
+                    background-color: $bg_blanco;
+                    border-radius: 1em;
+                    img{
+                        height: 380px;
+                    }
+                    .colorPrecio{
+                        font-size: 1.5rem;
+                        color: $bg_morado;
+                        .precioAnterior{
+                            text-decoration: line-through;
+                            color: $bg_gris;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            h2{
+                display: inline-block;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    left: -500px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    right: -500px;
+                }
+            }
+        }
+    }
+
+    section{
+        text-align: center;
+        .seccionNovedadesTitulo{
+            display: inline-block;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 2.2rem;
+                left: -500px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 2.2rem;
+                right: -500px;
+            }
+        }
+        .seccionNovedades{
+            .novedadesSamsung{
+                background-color: $bg_negro2;
+                @include condicion ($bg_blanco2);
+                display: inline-block;
+                height: 440px;
+                margin: 20px;
+                iframe{
+                    float: left;
+                    margin: 20px;
+                }
+                .novedadesSamsung-texto{
+                    text-align: justify;
+                    padding: 20px;
+                    h2{
+                        text-align: center;
+                        margin-top: 50px;
+                        @include condicion ($bg_blanco2);
+                    }
+
+                }
+                
+            }
+
+            .novedadesIphone{
+                background-color: $bg_negro2;
+                @include condicion ($bg_blanco2);
+                display: inline-block;
+                height: 440px;
+                margin: 20px;
+                iframe{
+                    float: right;
+                    margin: 20px;
+                }
+                .novedadesIphone-texto{
+                    h2{
+                        text-align: center;
+                        @include condicion ($bg_blanco2);
+                        margin: -5px;
+                    }
+                    p{
+                        text-align: justify;
+                        padding: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .novedadesSamsungTablet{
+                background-color: $bg_negro2;
+                @include condicion ($bg_blanco2);
+                display: inline-block;
+                height: 440px;
+                margin-top: 50px;
+                iframe{
+                    float: left;
+                }
+                .novedadesSamsungTablet-texto{
+                    text-align: center;
+                    margin-top: 30px;
+                    p{
+                        text-align: justify;
+                        padding: 20px;
+                    }
+                    h2{
+                        @include condicion ($bg_blanco2);
+                    }
+                }
+            }
+            .seccionNovedadesTitulo{
+                display: inline-block;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    left: -500px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    @include block(450px, 1px);
+                    background-color: currentColor;
+                    top: 2.2rem;
+                    right: -500px;
+                }
+            }
+        }
+
+        .seccionHydrogel{
+            margin-top: 100px;
+            background: #0f0c29;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            margin-bottom: 20px;
+            height: 700px;
+            margin: 20px;
+            margin-top: 120px;
+            .hidrogelImagen{
+                margin-top: 80px;
+                width: 560px;
+                float: left;
+            }
+
+            .hidrogelCaracteristicasParrafo{
+                h2{
+                    color: white;
+                    font-size: 60px;
+                }
+                p{
+                    color: white;
+                    padding: 1.2rem;
+                    font-size: 16px;
+                    text-align: start;
+                    border-top: 0.4rem solid #642c94;
+                    margin-left: 500px;
+                    margin-right: 20px;
+                }
+                button{
+                    background-color: #5c268c;
+                    width: 180px;
+                    height: 60px;
+                    border-radius: 5px;
+                    border: none;
+                    font-size: 18px;
+                    margin: 40px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+
+            .hidrogelCaracteristicasImagen{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                text-align: center;
+                padding: 20px;
+                img{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 32px;
+                }
+                p{
+                    padding-top: 20px;
+                    color: #f9f8fe;
+                    font-size: 1rem;
+                }
+            }
+
+        }
+
+        .seccionContactanos{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            img{
+                width: 1348px;
+                height: 600px;
+            }
+            .seccionContactanos-texto{
+                position: absolute;
+                top: 40%;
+                left: 10%;
+                transform: translate(-15%, -50%);
+                h2{
+                    color: white;
+                    font-size: 60px;
+                    text-align: start;
+                }
+                p{
+                    color: white;
+                    font-size: 20px;
+                    text-align: start;
+                    padding-left: 40px;
+                }
+                button{
+                    width: 200px;
+                    height: 80px;
+                    background-color: transparent;
+                    border: 2px solid white;
+                    margin-top: 50px;
+                    margin-right: 265px;
+                    a{
+                        font-weight: 500;
+                        color: white;
+                        text-decoration: none;
+                        font-size: 22px;
+                        padding: 25px 18px;
+                        &:hover{
+                            color: #0f6d99;
+                            background-color: white;
+                            padding: 25px 18px 25px 18px;
+                            
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .seccionChat{
+            position: fixed;
+            right: -20px;
+            bottom: 15px;
+            list-style:none;
+            .btn-group{
+                ul{
+                    padding-left: 80px;
+                    background-color: transparent;
+                    color: transparent;
+                    border: none;
+                    list-style: none;
+                    button{
+                        &:hover {
+                            color: transparent;
+                            background-color: transparent;
+                            border: none;
+                            transform: rotate(345deg);
+                        }
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                    ul{
+                        li{
+                            a{
+                                img{
+                                    width: 45px;
+                                }
+                                &:hover {
+                                    background-color: transparent;
+                                    color: transparent;
+                                    border: none;
+                                    list-style-type: none;
+                                    transform: scale(1.2, 1.2);
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .seccionArriba{
+            position: fixed;
+            bottom: 15px;
+            left: 5px;
+            a{
+                img{
+                    width: 40px;
+                    &:hover{
+                        transform: scale(1.2, 1.2);
+                    }
+                }
+            }
+        }
+
+        .seccionExtra{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            padding: 30px;
+            div{
+                background-color: $bg_blanco;
+                img{ 
+                    width: 70px;
+                }
+                h4{
+                    margin: 20px;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        /*Productos*/
+
+        .seccionProductos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1.4rem;
+                color: $bg_gris;
+                margin-right: 27px;
+                padding: 20px;
+                img{
+                    &:hover{
+                        transform: scale(1.05, 1.05);
+                    }
+                }
+                &:hover{
+                    color: $bg_cyanOscuro2;
+                }
+            }
+            p{
+                padding: 8px;
+            }
+        }
+        .productosMarcas-Titulo{
+            color: #979797;
+        }
+
+        .productosMarcas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+            margin: 40px;
+            margin-bottom: 80px;
+        }
+
+        .grid-Celulares{
+            display: grid;
+            grid-template-rows: repeat(1, 3fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-self: baseline;
+            align-content: space-between;
+            @include caja(20px, 20px);
+            div{
+                background-color: $bg_blanco;
+                border-radius: 1em;
+                &:hover{
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                    transform: scale(1.05);
+                }
+                .colorPrecio{
+                    font-size: 1.5rem;
+                    color: $bg_morado;
+                }
+                img{
+                    height: 350px;
+                }
+            }
+        }
+
+        .grid-Tablet{
+            display: grid;
+            grid-template-rows: repeat(1, 2fr);
+            grid-template-columns: repeat(3, 2fr);
+            gap: 30px;
+            align-items: baseline;
+            align-content: space-between;
+            @include caja(20px, 20px);
+            div{
+                background-color: $bg_blanco;
+                border-radius: 1em;
+                &:hover{
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                    transform: scale(1.05);
+                }
+                .colorPrecio{
+                    font-size: 1.5rem;
+                    color: $bg_morado;
+                }
+                img{
+                    @include block(250px, 350px);
+                }
+            }
+        }
+
+        .grid-Relojes{
+            display: grid;
+            grid-template-rows: repeat(1, 2fr);
+            grid-template-columns: repeat(3, 2fr);
+            gap: 30px;
+            align-items: baseline;
+            align-content: space-between;
+            @include caja(20px, 20px);
+            div{
+                background-color: $bg_blanco;
+                border-radius: 1em;
+                &:hover{
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                    transform: scale(1.05);
+                }
+                img{
+                    @include block(250px, 350px);
+                }
+                .colorPrecio{
+                    font-size: 1.5rem;
+                    color: $bg_morado;
+                }
+            }
+        }
+
+        .seccionTituloCel{
+            display: inline-block;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 1.2rem;
+                left: -500px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 1.2rem;
+                right: -500px;
+            }
+        }
+
+        .seccionTitulo{
+            display: inline-block;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 2.2rem;
+                left: -500px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                @include block(450px, 1px);
+                background-color: currentColor;
+                top: 2.2rem;
+                right: -500px;
+            }
+        }
+
+        /*----------------Ofertas------------------*/
+        .grid-Ofertas{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: baseline;
+            align-content: space-between;
+            margin: 20px;
+            div{
+                background-color: $bg_blanco;
+                border-radius: 1em;
+                img{
+                    @include block(250px, 370px);
+                }
+                p{
+                    align-self: end;
+                }
+                &:hover{
+                    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+                    transform: scale(1.05);
+                }
+                .colorPrecio{
+                    font-size: 1.5rem;
+                    color: $bg_morado;
+                    .precioAnterior{
+                        text-decoration: line-through;
+                        color: $bg_gris;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .oferItem2 img, .oferItem3 img, .oferItem6 img, .oferItem7 img{
+                width: 200px;
+            }
+
+        }
+
+        /*----------------Contacto-----------------*/
+
+        .fondoContacto{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 20px;
+            img{
+                @include block(1348px, 300px);
+            }
+            div{
+                position: absolute;
+                top: 50%;
+                left: 75%;
+                transform: translate(-15%, -50%);
+                border-bottom: 4px solid $bg_morado;
+                h1{
+                    color: $bg_blanco;
+                    letter-spacing: 0.5rem;
+                }
+            }
+        }
+
+        .seccionFormulario{
+            margin: 50px;
+            .textFormulario{
+                h3{
+                    color: #5c268c;
+                }
+                .container{
+                    width: 900px;
+                    margin: auto;
+                    padding: 10px 30px;
+                    h3{
+                        padding: 20px;
+                    }                    
+                }
+                .formNombre{
+                    float: left;
+                    input{
+                        width: 400px;
+                        &:focus{
+                            box-shadow: none;
+                            border: 1.5px solid #4524A3;
+                        }
+                    }
+                }
+
+                .formApellido{
+                    float: right;
+                    input{
+                        width: 400px;
+                        &:focus{
+                            box-shadow: none;
+                            border: 1.5px solid #4524A3;
+                        }
+                    }
+                }
+
+                .formDNI{
+                    float: left;
+                    input{
+                        width: 400px;
+                        &:focus{
+                            box-shadow: none;
+                            border: 1.5px solid #4524A3;
+                        }
+                    }
+                }
+
+                .formEmail{
+                    float: right;
+                    input{
+                        width: 400px;
+                        &:focus{
+                            box-shadow: none;
+                            border: 1.5px solid #4524A3;
+                        }
+                    }
+                }
+
+                .formHorario{
+                    float: right;
+                    select{
+                        width: 400px;
+                        color: #6c757d;
+                        option{
+                            color: #4524A3;
+                        }
+                        &:focus{
+                            box-shadow: none;
+                            border: 1.5px solid #4524A3;
+                        }
+                    }
+                }
+
+                .formTel{
+                    float: left;
+                    input{
+                        width: 400px;
+                        &:focus{
+                            box-shadow: none;
+                            border: 1.5px solid #4524A3;
+                        }
+                    }
+                }
+
+                .formConsulta{
+                    margin-top: 80px;
+                    textarea{
+                        width: 850px;
+                        &:focus{
+                            box-shadow: none;
+                            border: 1.5px solid #4524A3;
+                        }
+                    }
+                }
+
+                .formButton{
+                    button{
+                        width: 370px;
+                        padding: 20px;
+                        margin: 10px;
+                        background-color: #5C258D ;
+                        color: white;
+                        font-size: 19px;
+                        font-weight: 600;
+                        border: none;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: #4524A3;
+                            color: white;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .contacto-redesSocialesTitulo{
+            color: #707070;
+        }
+
+        .contacto-redesSociales{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
+            padding-right: 10px;
+            img{
+                padding: 20px;
+            }
+        }
+
+        .contacto-Mensajeria{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 2rem;
+            div{
+                padding-top: 50px;
+                height: 200px;
+                padding: 2rem;
+                p{
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding-top: 5px;
+                    a{
+                        text-decoration: none;
+                        color: #212529;
+                    }
+                }
+                .contacto-MensajeriaColor{
+                    padding: 15px;
+                    color: #5c268c;
+                    font-size: 20px;
+                }
+            }
+            .contacto-MensajeriaColor-Llamanos{
+                border-left: 3px solid #5c268c;
+                border-right: 3px solid #5c268c;
+            }
+        }
+        
+        /*-------------Quienes Somos--------------*/
+
+        .seccionQuienessomos{
+                font-weight: 500;
+                .fondoQuienes-somos{
+                    position: relative;
+                    display: inline-block;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    img{
+                        @include block(1348px, 300px);
+                    }
+                    div{
+                        position: absolute;
+                        top: 50%;
+                        left: 75%;
+                        transform: translate(-15%, -50%);
+                        border-bottom: 4px solid $bg_morado;
+                        h1{
+                            color: $bg_blanco;
+                            letter-spacing: 0.5rem;
+                        }
+                    }
+                    h1{
+                        color: white;
+                        letter-spacing: 0.5rem;
+                    }
+                }
+                div{
+                    .imgQuienessomos-lateral{
+                        float: right;
+                        width: 320px;
+                        margin: 20px;
+                    }
+                    .parrafoQuienessomos{
+                        text-align: justify;
+                        padding: 20px;
+                        font-weight: 500;
+                    }
+                    h2{
+                        font-size: 1.4rem;
+                        border-bottom: 2px solid #5c268c;
+                        margin-right: 360px;
+                    }                    
+                }
+        }
+    }
+}

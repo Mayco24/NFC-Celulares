@@ -1,0 +1,225 @@
+footer{
+    padding: 1.5rem;
+    background-color: #25262c;
+    border-bottom: 5px solid #5a5a5a;
+    .footer__piepagina{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 70px;
+        .footer__piepagina--ftrSuscribete{
+            .footer__piepagina--ftrSuscribete--h2{
+                color: white;
+                margin-top: 20px;
+                font-weight: 450;
+                font-size: 28px;
+            }
+            .footer__piepagina--ftrSuscribete--form{
+                padding-left: 50px;
+                padding-top: 10px;
+                .footer__piepagina--ftrSuscribete--form--p{
+                    color: white;
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: 20px;
+                }
+
+                .footer__piepagina--ftrSuscribete--form--input{
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid #9c9c9c;
+                    padding: 2px;
+                    color: white;
+                    width: 230px;
+                    height: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin: 20px;
+                    &::placeholder{
+                        color: white;
+                    }
+                    &:hover{
+                        color: white;
+                        border: none;
+                        border-bottom: 2px solid white;
+                    }
+                    &:focus{
+                        border: 2px solid white;
+                        outline: none;
+                    }
+                }
+                .footer__piepagina--ftrSuscribete--form--button{
+                    background-color: #5c268c;
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: none;
+                    color: white;
+                    margin-left: 85px;
+                }
+            }
+
+            .footer__piepagina__Contacto--ftrSuscribete--form{
+                padding-left: 50px;
+                padding-top: 10px;
+                .footer__piepagina__Contacto--ftrSuscribete--parrafoSuscribete{
+                    color: white;
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: 20px;
+                }
+
+                .footer__piepagina__Contacto--ftrSuscribete--inputSuscribete{
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid #9c9c9c;
+                    padding: 2px;
+                    color: white;
+                    width: 230px;
+                    height: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin: 20px;
+                    &::placeholder{
+                        color: white;
+                    }
+                    &:hover{
+                        color: white;
+                        border: none;
+                        border-bottom: 2px solid white;
+                    }
+                    &:focus{
+                        border: 2px solid white;
+                        outline: none;
+                    }
+                }
+
+                .footer__piepagina__Contacto--ftrSuscribete--buttonSuscribete{
+                    background-color: #5c268c;
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: none;
+                    color: white;
+                    margin-left: 85px;
+                }
+
+            }
+            
+        }
+
+        .footer__piepagina--ftrInformacion{
+            .footer__piepagina--ftrInformacion--h2{
+                color: white;
+                margin-top: 20px;
+                font-weight: 450;
+                font-size: 28px;
+            }
+            .footer__piepagina--ftrInformacion--ul{
+                padding-left: 50px;
+                .footer__piepagina--ftrInformacion--ul--li{
+                    padding-top: 10px;
+                    border-bottom: 1px solid #9c9c9c;
+                    list-style-type: none;
+                    padding: 5px;
+                    .footer__piepagina--ftrInformacion--ul--li--a{
+                        font-size: 16px;
+                        color: white;
+                        text-decoration: none;
+                        &:hover{
+                            color: #dadada;
+                        }
+                    }
+                    .footer__piepagina--ftrInformacion--ul--li--modal{
+                        color: black;
+                        .footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog{
+                            .footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content{
+                                .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body{
+                                    background-color: #dadada;
+                                    .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4{
+                                        padding: 15px;
+                                    }
+                                    .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p{
+                                        text-align: justify;
+                                    }
+                                    .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito{
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: start;
+                                        .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito--p{
+                                            padding-left: 20px;
+                                        }
+                                    }
+                                    .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--imgTarjetasDebito{
+                                        padding-bottom: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .footer__piepagina--ftrSecciones{
+            .footer__piepagina--ftrSecciones--h2{
+                color: white;
+                margin-top: 20px;
+                font-weight: 450;
+                font-size: 28px;
+            }
+            .footer__piepagina--ftrSecciones--ul{
+                padding-left: 50px;
+                .footer__piepagina--ftrSecciones--ul--li{
+                    color: white;
+                    text-align: start;
+                    padding-top: 10px;
+                    border-bottom: 1px solid #9c9c9c;
+                    list-style-type: none;
+                    padding: 5px;
+                    .footer__piepagina--ftrSecciones--ul--li--a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 16px;
+                        text-decoration: none;
+                        &:hover{
+                            color: #dadada;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__piepagina--ftrLogo {
+            .footer__piepagina--ftrLogo--img{
+                width:210px;
+                margin-top: 18px;
+            }
+            .footer__piepagina--ftrLogo--p{
+                padding-left: 30px;
+                color: #dadada;
+                font-size: 12px;
+                text-align: center;
+                padding-top: 30px;
+            }
+            .footer__piepagina--ftrLogo--redes_sociales{
+                padding-left: 30px;
+                margin: 20px;
+                .footer__piepagina--ftrLogo--redes_sociales--a{
+                    padding-left: 8px;
+                    .footer__piepagina--ftrLogo--redes_sociales--a--img{
+                        width: 35px;
+                        &:hover{
+                            transform: scale(1.08, 1.08);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}

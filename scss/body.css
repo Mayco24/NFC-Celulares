@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #dadada;
+}
+
+body .contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "contHeader contHeader contHeader" "contMain contMain contMain" "contMain contMain contMain" "contMain contMain contMain" "contFooter contFooter contFooter";
+}
+
+body .contenedor header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: contHeader;
+}
+
+body .contenedor main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: contMain;
+}
+
+body .contenedor footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: contFooter;
+}
+
+body h1 {
+  font-weight: 600;
+  color: #707070;
+  font-size: 32px;
+  margin: 20px;
+}
+
+body h2 {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  font-weight: 500;
+  color: #707070;
+}
+
+body h3 {
+  font-size: 22px;
+  padding: 5px;
+}
+
+body h4 {
+  font-size: 16px;
+  text-align: center;
+}
+/*# sourceMappingURL=body.css.map */
