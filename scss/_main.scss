@@ -78,7 +78,7 @@ main{
                         border-radius: 1rem;
                         background-color: $bg_verde;
                         @include condicion ($bg_blanco2);
-                        @include block(25px, 60px);
+                        @include block(60px, 25px);
                         z-index: 1;
                     }
                     .nuevoLanzamiento1{
@@ -88,7 +88,7 @@ main{
                         border-radius: 1rem;
                         background-color: $bg_verde;
                         @include condicion ($bg_blanco2);
-                        @include block(25px, 60px);
+                        @include block(60px, 25px);
                         z-index: 1;
                     }
                     .nuevoLanzamiento2{
@@ -98,7 +98,7 @@ main{
                         border-radius: 1rem;
                         background-color: $bg_verde;
                         @include condicion ($bg_blanco2);
-                        @include block(25px, 60px);
+                        @include block(60px, 25px);
                         z-index: 1;
                     }
                     .colorPrecio{
