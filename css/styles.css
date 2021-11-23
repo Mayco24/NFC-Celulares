@@ -20,20 +20,23 @@ body {
   body h1 {
     font-weight: 600;
     color: #707070;
-    font-size: 32px;
+    font-size: 30px;
     margin: 20px; }
   body h2 {
     text-align: center;
     padding: 20px;
     margin: 20px;
     font-weight: 500;
-    color: #707070; }
+    color: #707070;
+    font-size: 26px; }
   body h3 {
-    font-size: 22px;
+    font-size: 20px;
     padding: 5px; }
   body h4 {
     font-size: 16px;
     text-align: center; }
+  body p {
+    font-size: 15px; }
 
 header {
   background: #5C258D;
@@ -72,8 +75,8 @@ header {
         border: none;
         padding: 10px;
         font-size: 16px;
-        height: 35px;
         width: 200px;
+        height: 35px;
         transition: .3s linear; }
         header .header__nav .header__nav--botonesInicio .header__nav--botonesInicio--form .header__nav--botonesInicio--form--input:hover {
           width: 230px; }
@@ -187,38 +190,42 @@ main {
       margin: 20px; }
       main .seccionLanzamiento section .grid-Lanzamiento div {
         background-color: white;
-        border-radius: 1em; }
+        border-radius: 1em;
+        position: relative; }
         main .seccionLanzamiento section .grid-Lanzamiento div img {
           height: 380px; }
         main .seccionLanzamiento section .grid-Lanzamiento div .nuevoLanzamiento {
           position: absolute;
-          top: 1460px;
-          left: 35px;
+          top: 14px;
+          left: 10px;
           border-radius: 1rem;
           background-color: #92b843;
           color: whitesmoke;
-          height: 25px;
-          width: 60px; }
+          width: 25px;
+          height: 60px;
+          z-index: 1; }
         main .seccionLanzamiento section .grid-Lanzamiento div .nuevoLanzamiento1 {
           position: absolute;
-          top: 1460px;
-          left: 478px;
+          top: 14px;
+          left: 10px;
           border-radius: 1rem;
           background-color: #92b843;
           color: whitesmoke;
-          height: 25px;
-          width: 60px; }
+          width: 25px;
+          height: 60px;
+          z-index: 1; }
         main .seccionLanzamiento section .grid-Lanzamiento div .nuevoLanzamiento2 {
           position: absolute;
-          top: 1460px;
-          left: 925px;
+          top: 14px;
+          left: 10px;
           border-radius: 1rem;
           background-color: #92b843;
           color: whitesmoke;
-          height: 25px;
-          width: 60px; }
+          width: 25px;
+          height: 60px;
+          z-index: 1; }
         main .seccionLanzamiento section .grid-Lanzamiento div .colorPrecio {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           color: #5c268c; }
     main .seccionLanzamiento section h2 {
       display: inline-block;
@@ -303,89 +310,87 @@ main {
         background-color: currentColor;
         top: 2.2rem;
         right: -500px; }
-    main section .seccionNovedades .novedadesSamsung {
-      background-color: #262626;
-      color: whitesmoke;
-      display: inline-block;
-      height: 440px;
-      margin: 20px; }
-      main section .seccionNovedades .novedadesSamsung iframe {
-        float: left;
+    main section .seccionNovedades {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      main section .seccionNovedades .novedadesSamsung {
+        background-color: #262626;
+        color: whitesmoke;
+        display: inline-block;
         margin: 20px; }
-      main section .seccionNovedades .novedadesSamsung .novedadesSamsung-texto {
-        text-align: justify;
-        padding: 20px; }
+        main section .seccionNovedades .novedadesSamsung iframe {
+          float: left;
+          margin: 20px; }
         main section .seccionNovedades .novedadesSamsung .novedadesSamsung-texto h2 {
           text-align: center;
-          margin-top: 50px;
+          margin-top: 70px;
           color: whitesmoke; }
-    main section .seccionNovedades .novedadesIphone {
-      background-color: #262626;
-      color: whitesmoke;
-      display: inline-block;
-      height: 440px;
-      margin: 20px; }
-      main section .seccionNovedades .novedadesIphone iframe {
-        float: right;
-        margin: 20px; }
-      main section .seccionNovedades .novedadesIphone .novedadesIphone-texto h2 {
-        text-align: center;
-        color: whitesmoke;
-        margin: -5px; }
-      main section .seccionNovedades .novedadesIphone .novedadesIphone-texto p {
-        text-align: justify;
-        padding: 20px;
-        padding-bottom: 20px; }
-    main section .seccionNovedades .novedadesSamsungTablet {
-      background-color: #262626;
-      color: whitesmoke;
-      display: inline-block;
-      height: 440px;
-      margin-top: 50px; }
-      main section .seccionNovedades .novedadesSamsungTablet iframe {
-        float: left; }
-      main section .seccionNovedades .novedadesSamsungTablet .novedadesSamsungTablet-texto {
-        text-align: center;
-        margin-top: 30px; }
-        main section .seccionNovedades .novedadesSamsungTablet .novedadesSamsungTablet-texto p {
+        main section .seccionNovedades .novedadesSamsung .novedadesSamsung-texto p {
           text-align: justify;
           padding: 20px; }
-        main section .seccionNovedades .novedadesSamsungTablet .novedadesSamsungTablet-texto h2 {
-          color: whitesmoke; }
-    main section .seccionNovedades .seccionNovedadesTitulo {
-      display: inline-block;
-      position: relative; }
-      main section .seccionNovedades .seccionNovedadesTitulo::after {
-        content: "";
-        position: absolute;
-        width: 450px;
-        height: 1px;
-        background-color: currentColor;
-        top: 2.2rem;
-        left: -500px; }
-      main section .seccionNovedades .seccionNovedadesTitulo::before {
-        content: "";
-        position: absolute;
-        width: 450px;
-        height: 1px;
-        background-color: currentColor;
-        top: 2.2rem;
-        right: -500px; }
+      main section .seccionNovedades .novedadesIphone {
+        background-color: #262626;
+        color: whitesmoke;
+        display: inline-block;
+        margin: 20px; }
+        main section .seccionNovedades .novedadesIphone iframe {
+          float: right;
+          margin: 20px; }
+        main section .seccionNovedades .novedadesIphone .novedadesIphone-texto h2 {
+          text-align: center;
+          color: whitesmoke;
+          margin: 0; }
+        main section .seccionNovedades .novedadesIphone .novedadesIphone-texto p {
+          text-align: justify;
+          padding: 20px; }
+      main section .seccionNovedades .novedadesSamsungTablet {
+        background-color: #262626;
+        color: whitesmoke;
+        display: inline-block;
+        margin: 20px; }
+        main section .seccionNovedades .novedadesSamsungTablet iframe {
+          float: left;
+          margin: 20px; }
+        main section .seccionNovedades .novedadesSamsungTablet .novedadesSamsungTablet-texto {
+          text-align: center; }
+          main section .seccionNovedades .novedadesSamsungTablet .novedadesSamsungTablet-texto p {
+            text-align: justify;
+            padding: 20px; }
+          main section .seccionNovedades .novedadesSamsungTablet .novedadesSamsungTablet-texto h2 {
+            color: whitesmoke;
+            margin-top: 70px; }
+      main section .seccionNovedades .seccionNovedadesTitulo {
+        display: inline-block;
+        position: relative; }
+        main section .seccionNovedades .seccionNovedadesTitulo::after {
+          content: "";
+          position: absolute;
+          width: 450px;
+          height: 1px;
+          background-color: currentColor;
+          top: 2.2rem;
+          left: -500px; }
+        main section .seccionNovedades .seccionNovedadesTitulo::before {
+          content: "";
+          position: absolute;
+          width: 450px;
+          height: 1px;
+          background-color: currentColor;
+          top: 2.2rem;
+          right: -500px; }
     main section .seccionHydrogel {
-      margin-top: 100px;
       background: #0f0c29;
       /* fallback for old browsers */
       background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
       /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      margin-bottom: 20px;
-      height: 700px;
-      margin: 20px;
-      margin-top: 120px; }
+      padding: 2rem; }
       main section .seccionHydrogel .hidrogelImagen {
-        margin-top: 80px;
-        width: 560px;
+        width: 40%;
         float: left; }
       main section .seccionHydrogel .hidrogelCaracteristicasParrafo h2 {
         color: white;
@@ -398,31 +403,33 @@ main {
         border-top: 0.4rem solid #642c94;
         margin-left: 500px;
         margin-right: 20px; }
-      main section .seccionHydrogel .hidrogelCaracteristicasParrafo button {
+      main section .seccionHydrogel .hidrogelCaracteristicasImagen {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-end; }
+        main section .seccionHydrogel .hidrogelCaracteristicasImagen img {
+          width: 55px;
+          height: 55px;
+          border-radius: 27.5px; }
+        main section .seccionHydrogel .hidrogelCaracteristicasImagen p {
+          padding-top: 20px;
+          color: #f9f8fe;
+          font-size: 1rem; }
+      main section .seccionHydrogel button {
         background-color: #5c268c;
         width: 180px;
         height: 60px;
         border-radius: 5px;
         border: none;
-        font-size: 18px;
-        margin: 40px; }
-        main section .seccionHydrogel .hidrogelCaracteristicasParrafo button a {
+        margin: 20px;
+        margin-left: 60px; }
+        main section .seccionHydrogel button a {
           text-decoration: none;
           color: white; }
-      main section .seccionHydrogel .hidrogelCaracteristicasImagen {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        text-align: center;
-        padding: 20px; }
-        main section .seccionHydrogel .hidrogelCaracteristicasImagen img {
-          width: 64px;
-          height: 64px;
-          border-radius: 32px; }
-        main section .seccionHydrogel .hidrogelCaracteristicasImagen p {
-          padding-top: 20px;
-          color: #f9f8fe;
-          font-size: 1rem; }
+          main section .seccionHydrogel button a:hover {
+            background-color: #4524A3; }
     main section .seccionContactanos {
       position: relative;
       display: inline-block;
@@ -684,78 +691,49 @@ main {
     main section .seccionFormulario {
       margin: 50px; }
       main section .seccionFormulario .textFormulario h3 {
+        padding: 50px;
         color: #5c268c; }
       main section .seccionFormulario .textFormulario .container {
         width: 900px;
         margin: auto;
-        padding: 10px 30px; }
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around; }
         main section .seccionFormulario .textFormulario .container h3 {
           padding: 20px; }
-      main section .seccionFormulario .textFormulario .formNombre {
-        float: left; }
-        main section .seccionFormulario .textFormulario .formNombre input {
+        main section .seccionFormulario .textFormulario .container input {
           width: 400px; }
-          main section .seccionFormulario .textFormulario .formNombre input:focus {
-            box-shadow: none;
-            border: 1.5px solid #4524A3; }
-      main section .seccionFormulario .textFormulario .formApellido {
-        float: right; }
-        main section .seccionFormulario .textFormulario .formApellido input {
+        main section .seccionFormulario .textFormulario .container select {
           width: 400px; }
-          main section .seccionFormulario .textFormulario .formApellido input:focus {
-            box-shadow: none;
-            border: 1.5px solid #4524A3; }
-      main section .seccionFormulario .textFormulario .formDNI {
-        float: left; }
-        main section .seccionFormulario .textFormulario .formDNI input {
-          width: 400px; }
-          main section .seccionFormulario .textFormulario .formDNI input:focus {
-            box-shadow: none;
-            border: 1.5px solid #4524A3; }
-      main section .seccionFormulario .textFormulario .formEmail {
-        float: right; }
-        main section .seccionFormulario .textFormulario .formEmail input {
-          width: 400px; }
-          main section .seccionFormulario .textFormulario .formEmail input:focus {
-            box-shadow: none;
-            border: 1.5px solid #4524A3; }
-      main section .seccionFormulario .textFormulario .formHorario {
-        float: right; }
-        main section .seccionFormulario .textFormulario .formHorario select {
-          width: 400px;
+        main section .seccionFormulario .textFormulario .container .form-control:focus {
+          box-shadow: none;
+          border: 1.5px solid #4524A3; }
+        main section .seccionFormulario .textFormulario .container .formHorario .form-select {
           color: #6c757d; }
-          main section .seccionFormulario .textFormulario .formHorario select option {
+          main section .seccionFormulario .textFormulario .container .formHorario .form-select option {
             color: #4524A3; }
-          main section .seccionFormulario .textFormulario .formHorario select:focus {
+          main section .seccionFormulario .textFormulario .container .formHorario .form-select:focus {
             box-shadow: none;
             border: 1.5px solid #4524A3; }
-      main section .seccionFormulario .textFormulario .formTel {
-        float: left; }
-        main section .seccionFormulario .textFormulario .formTel input {
-          width: 400px; }
-          main section .seccionFormulario .textFormulario .formTel input:focus {
-            box-shadow: none;
-            border: 1.5px solid #4524A3; }
-      main section .seccionFormulario .textFormulario .formConsulta {
-        margin-top: 80px; }
-        main section .seccionFormulario .textFormulario .formConsulta textarea {
-          width: 850px; }
-          main section .seccionFormulario .textFormulario .formConsulta textarea:focus {
-            box-shadow: none;
-            border: 1.5px solid #4524A3; }
-      main section .seccionFormulario .textFormulario .formButton button {
-        width: 370px;
-        padding: 20px;
-        margin: 10px;
-        background-color: #5C258D;
-        color: white;
-        font-size: 19px;
-        font-weight: 600;
-        border: none;
-        text-decoration: none; }
-        main section .seccionFormulario .textFormulario .formButton button:hover {
-          background-color: #4524A3;
-          color: white; }
+        main section .seccionFormulario .textFormulario .container .formConsulta {
+          width: 825px; }
+        main section .seccionFormulario .textFormulario .container .formButton button {
+          width: 370px;
+          padding: 20px;
+          margin: 10px;
+          background-color: #5c268c;
+          color: white;
+          font-size: 19px;
+          font-weight: 600;
+          border: none;
+          text-decoration: none; }
+          main section .seccionFormulario .textFormulario .container .formButton button:hover {
+            background-color: #4524A3;
+            color: white; }
+          main section .seccionFormulario .textFormulario .container .formButton button:focus {
+            box-shadow: none; }
     main section .contacto-redesSocialesTitulo {
       color: #707070; }
     main section .contacto-redesSociales {
@@ -778,11 +756,10 @@ main {
         padding-top: 50px;
         height: 200px;
         padding: 2rem; }
-        main section .contacto-Mensajeria div p {
-          font-size: 18px;
-          font-weight: 500;
+        main section .contacto-Mensajeria div h4 {
+          font-weight: 410;
           padding-top: 5px; }
-          main section .contacto-Mensajeria div p a {
+          main section .contacto-Mensajeria div h4 a {
             text-decoration: none;
             color: #212529; }
         main section .contacto-Mensajeria div .contacto-MensajeriaColor {
@@ -811,9 +788,6 @@ main {
           main section .seccionQuienessomos .fondoQuienes-somos div h1 {
             color: white;
             letter-spacing: 0.5rem; }
-        main section .seccionQuienessomos .fondoQuienes-somos h1 {
-          color: white;
-          letter-spacing: 0.5rem; }
       main section .seccionQuienessomos div .imgQuienessomos-lateral {
         float: right;
         width: 320px;
@@ -821,11 +795,17 @@ main {
       main section .seccionQuienessomos div .parrafoQuienessomos {
         text-align: justify;
         padding: 20px;
-        font-weight: 500; }
+        font-weight: 500;
+        font-size: 16px; }
       main section .seccionQuienessomos div h2 {
+        color: #511e7e;
         font-size: 1.4rem;
         border-bottom: 2px solid #5c268c;
         margin-right: 360px; }
+      main section .seccionQuienessomos div .textoQuienessomos {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 500; }
 
 footer {
   padding: 1.5rem;

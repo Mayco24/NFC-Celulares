@@ -30,7 +30,6 @@ main{
                         color: $bg_morado;
                     }
                 }
-                
             }
     
             h2{
@@ -68,41 +67,42 @@ main{
                 div{
                     background-color: $bg_blanco;
                     border-radius: 1em;
+                    position: relative;
                     img{
                         height: 380px;
                     }
                     .nuevoLanzamiento{
                         position: absolute;
-                        top: 1460px;
-                        left: 35px;
+                        top: 14px;
+                        left: 10px;
                         border-radius: 1rem;
-                        background-color: #92b843;
-                        color: whitesmoke;
-                        height: 25px;
-                        width: 60px;
+                        background-color: $bg_verde;
+                        @include condicion ($bg_blanco2);
+                        @include block(25px, 60px);
+                        z-index: 1;
                     }
                     .nuevoLanzamiento1{
                         position: absolute;
-                        top: 1460px;
-                        left: 478px;
+                        top: 14px;
+                        left: 10px;
                         border-radius: 1rem;
-                        background-color: #92b843;
-                        color: whitesmoke;
-                        height: 25px;
-                        width: 60px;
+                        background-color: $bg_verde;
+                        @include condicion ($bg_blanco2);
+                        @include block(25px, 60px);
+                        z-index: 1;
                     }
                     .nuevoLanzamiento2{
                         position: absolute;
-                        top: 1460px;
-                        left: 925px;
+                        top: 14px;
+                        left: 10px;
                         border-radius: 1rem;
-                        background-color: #92b843;
-                        color: whitesmoke;
-                        height: 25px;
-                        width: 60px;
+                        background-color: $bg_verde;
+                        @include condicion ($bg_blanco2);
+                        @include block(25px, 60px);
+                        z-index: 1;
                     }
                     .colorPrecio{
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                         color: $bg_morado;
                     }
                 }
@@ -201,34 +201,37 @@ main{
             }
         }
         .seccionNovedades{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
             .novedadesSamsung{
                 background-color: $bg_negro2;
                 @include condicion ($bg_blanco2);
                 display: inline-block;
-                height: 440px;
                 margin: 20px;
                 iframe{
                     float: left;
                     margin: 20px;
                 }
                 .novedadesSamsung-texto{
-                    text-align: justify;
-                    padding: 20px;
                     h2{
                         text-align: center;
-                        margin-top: 50px;
+                        margin-top: 70px;
                         @include condicion ($bg_blanco2);
                     }
-
+                    p{
+                        text-align: justify;
+                        padding: 20px;
+                    }
                 }
-                
             }
 
             .novedadesIphone{
                 background-color: $bg_negro2;
                 @include condicion ($bg_blanco2);
                 display: inline-block;
-                height: 440px;
                 margin: 20px;
                 iframe{
                     float: right;
@@ -238,12 +241,11 @@ main{
                     h2{
                         text-align: center;
                         @include condicion ($bg_blanco2);
-                        margin: -5px;
+                        margin: 0;
                     }
                     p{
                         text-align: justify;
                         padding: 20px;
-                        padding-bottom: 20px;
                     }
                 }
             }
@@ -252,20 +254,20 @@ main{
                 background-color: $bg_negro2;
                 @include condicion ($bg_blanco2);
                 display: inline-block;
-                height: 440px;
-                margin-top: 50px;
+                margin: 20px;
                 iframe{
                     float: left;
+                    margin: 20px;
                 }
                 .novedadesSamsungTablet-texto{
                     text-align: center;
-                    margin-top: 30px;
                     p{
                         text-align: justify;
                         padding: 20px;
                     }
                     h2{
                         @include condicion ($bg_blanco2);
+                        margin-top: 70px;
                     }
                 }
             }
@@ -292,27 +294,22 @@ main{
         }
 
         .seccionHydrogel{
-            margin-top: 100px;
             background: #0f0c29;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            margin-bottom: 20px;
-            height: 700px;
-            margin: 20px;
-            margin-top: 120px;
+            padding: 2rem;
             .hidrogelImagen{
-                margin-top: 80px;
-                width: 560px;
+                width: 40%;
                 float: left;
             }
 
             .hidrogelCaracteristicasParrafo{
                 h2{
-                    color: white;
+                    @include condicion ($bg_blanco);
                     font-size: 60px;
                 }
                 p{
-                    color: white;
+                    @include condicion ($bg_blanco);
                     padding: 1.2rem;
                     font-size: 16px;
                     text-align: start;
@@ -320,36 +317,40 @@ main{
                     margin-left: 500px;
                     margin-right: 20px;
                 }
-                button{
-                    background-color: #5c268c;
-                    width: 180px;
-                    height: 60px;
-                    border-radius: 5px;
-                    border: none;
-                    font-size: 18px;
-                    margin: 40px;
-                    a{
-                        text-decoration: none;
-                        color: white;
-                    }
-                }
             }
 
             .hidrogelCaracteristicasImagen{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-                text-align: center;
-                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: flex-end;
                 img{
-                    width: 64px;
-                    height: 64px;
-                    border-radius: 32px;
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 27.5px;
                 }
                 p{
                     padding-top: 20px;
-                    color: #f9f8fe;
+                    color: $bg_blanco5;
                     font-size: 1rem;
+                }
+            }
+
+            button{
+                background-color: $bg_morado;
+                width: 180px;
+                height: 60px;
+                border-radius: 5px;
+                border: none;
+                margin: 20px;
+                margin-left: 60px;
+                a{
+                    text-decoration: none;
+                    @include condicion ($bg_blanco);
+                    &:hover{
+                        background-color: $bg_segundoMorado;
+                    }
                 }
             }
 
@@ -361,8 +362,7 @@ main{
             text-align: center;
             width: 100%;
             img{
-                width: 1348px;
-                height: 600px;
+                @include block(1348px, 600px);
             }
             .seccionContactanos-texto{
                 position: absolute;
@@ -370,32 +370,31 @@ main{
                 left: 10%;
                 transform: translate(-15%, -50%);
                 h2{
-                    color: white;
+                    @include condicion ($bg_blanco);
                     font-size: 60px;
                     text-align: start;
                 }
                 p{
-                    color: white;
+                    @include condicion ($bg_blanco);
                     font-size: 20px;
                     text-align: start;
                     padding-left: 40px;
                 }
                 button{
-                    width: 200px;
-                    height: 80px;
+                    @include block(200px, 80px);
                     background-color: transparent;
-                    border: 2px solid white;
+                    border: 2px solid $bg_blanco;
                     margin-top: 50px;
                     margin-right: 265px;
                     a{
                         font-weight: 500;
-                        color: white;
+                        @include condicion ($bg_blanco);
                         text-decoration: none;
                         font-size: 22px;
                         padding: 25px 18px;
                         &:hover{
-                            color: #0f6d99;
-                            background-color: white;
+                            color: $bg_celesteOscuro;
+                            background-color: $bg_blanco;
                             padding: 25px 18px 25px 18px;
                             
                         }
@@ -508,7 +507,7 @@ main{
             }
         }
         .productosMarcas-Titulo{
-            color: #979797;
+            color: $bg_gris2;
         }
 
         .productosMarcas{
@@ -703,121 +702,75 @@ main{
             margin: 50px;
             .textFormulario{
                 h3{
-                    color: #5c268c;
+                    padding: 50px;
+                    color: $bg_morado;
                 }
                 .container{
                     width: 900px;
                     margin: auto;
                     padding: 10px 30px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
                     h3{
                         padding: 20px;
-                    }                    
-                }
-                .formNombre{
-                    float: left;
+                    }
                     input{
                         width: 400px;
-                        &:focus{
-                            box-shadow: none;
-                            border: 1.5px solid #4524A3;
-                        }
                     }
-                }
-
-                .formApellido{
-                    float: right;
-                    input{
-                        width: 400px;
-                        &:focus{
-                            box-shadow: none;
-                            border: 1.5px solid #4524A3;
-                        }
-                    }
-                }
-
-                .formDNI{
-                    float: left;
-                    input{
-                        width: 400px;
-                        &:focus{
-                            box-shadow: none;
-                            border: 1.5px solid #4524A3;
-                        }
-                    }
-                }
-
-                .formEmail{
-                    float: right;
-                    input{
-                        width: 400px;
-                        &:focus{
-                            box-shadow: none;
-                            border: 1.5px solid #4524A3;
-                        }
-                    }
-                }
-
-                .formHorario{
-                    float: right;
                     select{
                         width: 400px;
-                        color: #6c757d;
-                        option{
-                            color: #4524A3;
-                        }
+                    }
+                    .form-control{
                         &:focus{
                             box-shadow: none;
-                            border: 1.5px solid #4524A3;
+                            border: 1.5px solid $bg_segundoMorado;
                         }
                     }
-                }
+                    .formHorario{
+                        .form-select{
+                            color: $bg_gris4;
+                            option{
+                                color: $bg_segundoMorado;
+                            }
+                            &:focus{
+                                box-shadow: none;
+                                border: 1.5px solid $bg_segundoMorado;
+                            }
+                        }
 
-                .formTel{
-                    float: left;
-                    input{
-                        width: 400px;
-                        &:focus{
-                            box-shadow: none;
-                            border: 1.5px solid #4524A3;
+                    }
+                    .formConsulta{
+                        width: 825px;
+                    }
+                    .formButton{
+                        button{
+                            width: 370px;
+                            padding: 20px;
+                            margin: 10px;
+                            background-color: $bg_morado ;
+                            @include condicion ($bg_blanco);
+                            font-size: 19px;
+                            font-weight: 600;
+                            border: none;
+                            text-decoration: none;
+                            &:hover{
+                                background-color: $bg_segundoMorado;
+                                @include condicion ($bg_blanco);
+                            }
+                            &:focus{
+                                box-shadow: none;
+                            }
                         }
                     }
+
                 }
-
-                .formConsulta{
-                    margin-top: 80px;
-                    textarea{
-                        width: 850px;
-                        &:focus{
-                            box-shadow: none;
-                            border: 1.5px solid #4524A3;
-                        }
-                    }
-                }
-
-                .formButton{
-                    button{
-                        width: 370px;
-                        padding: 20px;
-                        margin: 10px;
-                        background-color: #5C258D ;
-                        color: white;
-                        font-size: 19px;
-                        font-weight: 600;
-                        border: none;
-                        text-decoration: none;
-                        &:hover{
-                            background-color: #4524A3;
-                            color: white;
-                        }
-                    }
-                }
-
-
             }
         }
 
         .contacto-redesSocialesTitulo{
-            color: #707070;
+            color: $bg_gris3;
         }
 
         .contacto-redesSociales{
@@ -837,30 +790,29 @@ main{
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             text-align: center;
-            background-color: #f1f1f1;
+            background-color: $bg_blanco4;
             padding: 2rem;
             div{
                 padding-top: 50px;
                 height: 200px;
                 padding: 2rem;
-                p{
-                    font-size: 18px;
-                    font-weight: 500;
+                h4{
+                    font-weight: 410;
                     padding-top: 5px;
                     a{
                         text-decoration: none;
-                        color: #212529;
+                        color: $bg_negro4;
                     }
                 }
                 .contacto-MensajeriaColor{
                     padding: 15px;
-                    color: #5c268c;
+                    color: $bg_morado;
                     font-size: 20px;
                 }
             }
             .contacto-MensajeriaColor-Llamanos{
-                border-left: 3px solid #5c268c;
-                border-right: 3px solid #5c268c;
+                border-left: 3px solid $bg_morado;
+                border-right: 3px solid $bg_morado;
             }
         }
         
@@ -887,10 +839,6 @@ main{
                             letter-spacing: 0.5rem;
                         }
                     }
-                    h1{
-                        color: white;
-                        letter-spacing: 0.5rem;
-                    }
                 }
                 div{
                     .imgQuienessomos-lateral{
@@ -902,12 +850,20 @@ main{
                         text-align: justify;
                         padding: 20px;
                         font-weight: 500;
+                        font-size: 16px;
                     }
                     h2{
+                        color: $bg_tercerMorado;
                         font-size: 1.4rem;
-                        border-bottom: 2px solid #5c268c;
+                        border-bottom: 2px solid $bg_morado;
                         margin-right: 360px;
+                    }
+                    .textoQuienessomos{
+                        font-size: 16px;
+                        text-align: center;
+                        font-weight: 500;
                     }                    
+                                        
                 }
         }
     }

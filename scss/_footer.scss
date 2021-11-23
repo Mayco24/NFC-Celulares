@@ -1,7 +1,7 @@
 footer{
     padding: 1.5rem;
-    background-color: #25262c;
-    border-bottom: 5px solid #5a5a5a;
+    background-color: $bg_negro3;
+    border-bottom: 5px solid $bg_gris5;
     .footer__piepagina{
         display: flex;
         flex-direction: row;
@@ -10,7 +10,7 @@ footer{
         padding-right: 70px;
         .footer__piepagina--ftrSuscribete{
             .footer__piepagina--ftrSuscribete--h2{
-                color: white;
+                @include condicion ($bg_blanco);
                 margin-top: 20px;
                 font-weight: 450;
                 font-size: 28px;
@@ -19,7 +19,7 @@ footer{
                 padding-left: 50px;
                 padding-top: 10px;
                 .footer__piepagina--ftrSuscribete--form--p{
-                    color: white;
+                    @include condicion ($bg_blanco);
                     font-size: 15px;
                     text-align: justify;
                     margin-left: 20px;
@@ -28,9 +28,9 @@ footer{
                 .footer__piepagina--ftrSuscribete--form--input{
                     background-color: transparent;
                     border: none;
-                    border-bottom: 2px solid #9c9c9c;
+                    border-bottom: 2px solid $bg_gris;
                     padding: 2px;
-                    color: white;
+                    @include condicion ($bg_blanco);
                     width: 230px;
                     height: 35px;
                     display: flex;
@@ -38,25 +38,25 @@ footer{
                     flex-wrap: wrap;
                     margin: 20px;
                     &::placeholder{
-                        color: white;
+                        @include condicion ($bg_blanco);
                     }
                     &:hover{
-                        color: white;
+                        @include condicion ($bg_blanco);
                         border: none;
-                        border-bottom: 2px solid white;
+                        border-bottom: 2px solid $bg_blanco;
                     }
                     &:focus{
-                        border: 2px solid white;
+                        border: 2px solid $bg_blanco;
                         outline: none;
                     }
                 }
                 .footer__piepagina--ftrSuscribete--form--button{
-                    background-color: #5c268c;
+                    background-color: $bg_morado;
                     width: 100px;
                     height: 40px;
                     border-radius: 5px;
                     border: none;
-                    color: white;
+                    @include condicion ($bg_blanco);
                     margin-left: 85px;
                 }
             }
@@ -65,7 +65,7 @@ footer{
                 padding-left: 50px;
                 padding-top: 10px;
                 .footer__piepagina__Contacto--ftrSuscribete--parrafoSuscribete{
-                    color: white;
+                    @include condicion ($bg_blanco);
                     font-size: 15px;
                     text-align: justify;
                     margin-left: 20px;
@@ -74,36 +74,34 @@ footer{
                 .footer__piepagina__Contacto--ftrSuscribete--inputSuscribete{
                     background-color: transparent;
                     border: none;
-                    border-bottom: 2px solid #9c9c9c;
+                    border-bottom: 2px solid $bg_gris;
                     padding: 2px;
-                    color: white;
-                    width: 230px;
-                    height: 35px;
+                    @include condicion ($bg_blanco);
+                    @include block(230px, 35px);
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
                     margin: 20px;
                     &::placeholder{
-                        color: white;
+                        @include condicion ($bg_blanco);
                     }
                     &:hover{
-                        color: white;
+                        @include condicion ($bg_blanco);
                         border: none;
-                        border-bottom: 2px solid white;
+                        border-bottom: 2px solid $bg_blanco;
                     }
                     &:focus{
-                        border: 2px solid white;
+                        border: 2px solid $bg_blanco;
                         outline: none;
                     }
                 }
 
                 .footer__piepagina__Contacto--ftrSuscribete--buttonSuscribete{
-                    background-color: #5c268c;
-                    width: 100px;
-                    height: 40px;
+                    background-color: $bg_morado;
+                    @include block(100px, 40px);
                     border-radius: 5px;
                     border: none;
-                    color: white;
+                    @include condicion ($bg_blanco);
                     margin-left: 85px;
                 }
 
@@ -113,7 +111,7 @@ footer{
 
         .footer__piepagina--ftrInformacion{
             .footer__piepagina--ftrInformacion--h2{
-                color: white;
+                @include condicion ($bg_blanco);
                 margin-top: 20px;
                 font-weight: 450;
                 font-size: 28px;
@@ -122,15 +120,15 @@ footer{
                 padding-left: 50px;
                 .footer__piepagina--ftrInformacion--ul--li{
                     padding-top: 10px;
-                    border-bottom: 1px solid #9c9c9c;
+                    border-bottom: 1px solid $bg_gris;
                     list-style-type: none;
                     padding: 5px;
                     .footer__piepagina--ftrInformacion--ul--li--a{
                         font-size: 16px;
-                        color: white;
+                        @include condicion ($bg_blanco);
                         text-decoration: none;
                         &:hover{
-                            color: #dadada;
+                            @include condicion ($bg_blanco3);
                         }
                     }
                     .footer__piepagina--ftrInformacion--ul--li--modal{
@@ -138,7 +136,7 @@ footer{
                         .footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog{
                             .footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content{
                                 .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body{
-                                    background-color: #dadada;
+                                    background-color: $bg_blanco3;
                                     .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4{
                                         padding: 15px;
                                     }
@@ -167,7 +165,7 @@ footer{
         }
         .footer__piepagina--ftrSecciones{
             .footer__piepagina--ftrSecciones--h2{
-                color: white;
+                @include condicion ($bg_blanco);
                 margin-top: 20px;
                 font-weight: 450;
                 font-size: 28px;
@@ -175,19 +173,19 @@ footer{
             .footer__piepagina--ftrSecciones--ul{
                 padding-left: 50px;
                 .footer__piepagina--ftrSecciones--ul--li{
-                    color: white;
+                    @include condicion ($bg_blanco);
                     text-align: start;
                     padding-top: 10px;
-                    border-bottom: 1px solid #9c9c9c;
+                    border-bottom: 1px solid $bg_gris;
                     list-style-type: none;
                     padding: 5px;
                     .footer__piepagina--ftrSecciones--ul--li--a{
-                        color: white;
+                        @include condicion ($bg_blanco);
                         text-decoration: none;
                         font-size: 16px;
                         text-decoration: none;
                         &:hover{
-                            color: #dadada;
+                            @include condicion ($bg_blanco3);
                         }
                     }
                 }
@@ -200,7 +198,7 @@ footer{
             }
             .footer__piepagina--ftrLogo--p{
                 padding-left: 30px;
-                color: #dadada;
+                @include condicion ($bg_blanco3);
                 font-size: 12px;
                 text-align: center;
                 padding-top: 30px;

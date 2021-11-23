@@ -24,13 +24,13 @@ header{
                     font-size: 18px;
                     
                     .header__nav--menu--ul--li--a{
-                        color: white;
+                        @include condicion ($bg_blanco);
                         text-decoration: none;
                         text-align: center;
                         padding: 18px;
                         &:hover{
-                            border-bottom: 3px solid white;
-                            color: whitesmoke;
+                            border-bottom: 3px solid $bg_blanco;
+                            @include condicion ($bg_blanco2);
                         }
                     }
                 }
@@ -40,22 +40,21 @@ header{
             padding: 5px;
             .header__nav--botonesInicio--form{
                 .header__nav--botonesInicio--form--input {
-                    background-color: #5c268c;
-                    color: white;
+                    background-color: $bg_morado;
+                    @include condicion ($bg_blanco);
                     border: none;
                     padding: 10px;
                     font-size: 16px;
-                    height: 35px;
-                    width: 200px;
+                    @include block(200px, 35px);
                     transition: .3s linear;
                     &:hover{
                         width: 230px;
                     }
                     &::placeholder{
-                        color: white;
+                        @include condicion ($bg_blanco);
                     }
                     &:focus{
-                        border: 1.5px solid white;
+                        border: 1.5px solid $bg_blanco;
                         outline: none;
                     }
                     &:active{
@@ -82,7 +81,7 @@ header{
                 .header__nav--botonesLateral--modal-dialog{
                     .header__nav--botonesLateral--modal-content{
                         .header__nav--botonesLateral--modal-body{
-                            background-color: #4389a2;
+                            background-color: $bg_cyanOscuro;
                             .header__nav--botonesLateral--modal-body--a{
                                 .header__nav--botonesLateral--modal-body--a--img{
                                     text-align: center;
@@ -99,22 +98,21 @@ header{
                                             margin: 10px;
                                             width: 10px;
                                             &:focus{
-                                                border: 1.5px solid #5c268c;
+                                                border: 1.5px solid $bg_morado;
                                                 box-shadow: none;
                                             }
                                         }
                                     }
                                     .header__nav--botonesLateral--modal-body--form--form-group--button{
-                                        width: 300px;
-                                        height: 60px;
+                                        @include block(300px, 60px);
                                         margin-top: 8px;
                                         margin-left: 80px;
-                                        background-color: #5c268c;
-                                        color: white;
+                                        background-color: $bg_morado;
+                                        @include condicion ($bg_blanco);
                                         border: none;
                                         border-radius: 5px;
                                         &:hover{
-                                            background-color: #4524A3;
+                                            background-color: $bg_segundoMorado;
                                         }
                                     }
                                 }
@@ -123,9 +121,9 @@ header{
                                     margin-top: 20px;
                                     .header__nav--botonesLateral--modal-body--form--p--a{
                                         text-decoration: none;
-                                        color: whitesmoke;
+                                        @include condicion ($bg_blanco2);
                                         &:hover{
-                                            color: #3F57B0;
+                                            color: $bg_violeta;
                                         }
                                     }
                                 }
@@ -134,10 +132,10 @@ header{
                         .header__nav--botonesLateral--modal-footer{
                             padding-right: 110px;
                             .header__nav--botonesLateral--modal-footer--a{
-                                color: #4389a2;
+                                color: $bg_cyanOscuro;
                                 text-decoration: none;
                                 &:hover{
-                                    color: #3F57B0;
+                                    color: $bg_violeta;
                                 }
                             }
                         }

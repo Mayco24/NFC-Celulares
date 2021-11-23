@@ -10,6 +10,7 @@ body{
 }
 
 .contenedor{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(5 , auto); ;
@@ -36,11 +37,12 @@ body{
 h1{
     font-weight: 600;
     color: #707070;
-    font-size: 32px;
+    font-size: 30px;
     margin: 20px;
 }
 
 h2{
+    font-size: 26px;
     text-align: center;
     padding: 20px;
     margin: 20px;
@@ -49,7 +51,7 @@ h2{
 }
 
 h3{
-    font-size: 22px;
+    font-size: 20px;
     padding: 5px;
 }
 
@@ -58,7 +60,12 @@ h4{
     text-align: center;
 }
 
+p{
+    font-size: 15px;
+}
+
 header{
+    width: 100%;
     background: #5C258D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -66,10 +73,6 @@ header{
 
 .header__nav--logo_Inicio{
     padding-left: 20px;
-}
-
-.header__nav--logo_Inicio--a--img{
-    width: 170px;
 }
 
 .header__nav{
@@ -85,19 +88,19 @@ header{
 
 .header__nav--menu--ul--li{
     display: inline-block;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .header__nav--menu--ul--li--a{
     color: white;
     text-decoration: none;
     text-align: center;
-    padding: 17.5px;
+    padding: 18px;
 }
 
 .header__nav--menu--ul--li--a:hover{
     border-bottom: 3px solid white;
-    color: whitesmoke;
+    color: #d3d3d3;
 }
 
 .header__nav--botonesInicio{
@@ -105,10 +108,10 @@ header{
 }
 
 .header__nav--botonesInicio--form--button{
-    background-color: transparent;
     position: absolute;
+    background-color: transparent;
     top: 20px;
-    right: 158px;
+    right: 160px;
     border: none;
 }
 
@@ -129,6 +132,7 @@ header{
 
 .header__nav--botonesInicio--form--input::placeholder{
     color: white;
+    font-size: 14px;
 }
 
 .header__nav--botonesInicio--form--input:focus{
@@ -208,11 +212,12 @@ header{
 }
 
 
-/*------------------------Main------------------------------*/
+/*-----------------------------------------------------------MAIN------------------------------------------------------*/
 
 .main{
     width: 100%;
     padding: 1rem 0;
+    margin: auto;
 }
 
 .seccionCarrusel .carousel-inner img{
@@ -265,54 +270,42 @@ section{
 .grid-masVendido div, .grid-Lanzamiento div, .grid-algunasOfertas div{
     background-color: white;
     border-radius: 1em;
+    position: relative;
 }
 
-.nuevoLanzamiento{
+.nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
     position: absolute;
-    top: 1460px;
-    left: 30px;
+    top: 14px;
+    left: 10px;
     border-radius: 1rem;
     background-color: #92b843;
     color: whitesmoke;
     height: 25px;
     width: 60px;
+    z-index: 1;
 }
 
-.nuevoLanzamiento1{
-    position: absolute;
-    top: 1460px;
-    left: 482px;
-    border-radius: 1rem;
-    background-color: #92b843;
-    color: whitesmoke;
-    height: 25px;
-    width: 60px;
-}
-
-.nuevoLanzamiento2{
-    position: absolute;
-    top: 1460px;
-    left: 935px;
-    border-radius: 1rem;
-    background-color: #92b843;
-    color: whitesmoke;
-    height: 25px;
-    width: 60px;
-}
 
 .colorPrecio{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #5C258D;
 }
 
 
-/*Novedades*/
+/*--------------------------------------------------Novedades--------------------------------------------------------*/
 
-.novedadesSamsung{
+.seccionNovedades{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.novedadesSamsung, .novedadesSamsungTablet, .novedadesIphone{
     background-color: #262626;
     color: whitesmoke;
     display: inline-block;
-    height: 450px;
     margin: 20px;
 }
 
@@ -330,15 +323,6 @@ section{
 .novedadesSamsung-texto p{
     text-align: justify;
     padding: 20px;
-    
-}
-
-.novedadesIphone{
-    background-color: #262626;
-    color: whitesmoke;
-    display: inline-block;
-    height: 450px;
-    margin: 20px;
 }
 
 .novedadesIphone iframe{
@@ -348,9 +332,8 @@ section{
 
 .novedadesIphone-texto h2{
     text-align: center;
-    margin: -5px;
     color: whitesmoke;
-    
+    margin: 0;
 }
 
 .novedadesIphone-texto p{
@@ -358,21 +341,13 @@ section{
     padding: 20px;
 }
 
-.novedadesSamsungTablet{
-    background-color: #262626;
-    color: whitesmoke;
-    display: inline-block;
-    height: 450px;
-    margin-top: 50px;
-}
-
 .novedadesSamsungTablet iframe{
     float: left;
+    margin: 20px;
 }
 
 .novedadesSamsungTablet-texto{
     text-align: center;
-    margin-top: 30px;
 }
 
 .novedadesSamsungTablet-texto p{
@@ -382,78 +357,79 @@ section{
 
 .novedadesSamsungTablet-texto h2{
     color: whitesmoke;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
-/*Hydrogel*/
+/*--------------------------------------------------------Hydrogel-----------------------------------------------------*/
 
 .seccionHydrogel{
-    margin-top: 100px;
+    width: 100%;
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 700px;
-    margin: 20px;
-    margin-top: 120px;
+    padding: 2rem;
 }
 
 
 .hidrogelImagen{
-    margin-top: 80px;
-    width: 560px;
+    width: 40%;
     float: left;
 }
 
 .hidrogelCaracteristicasImagen{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 .hidrogelCaracteristicasImagen img{
-    width: 64px;
-    height: 64px;
-    border-radius: 32px;
+    width: 55px;
+    height: 55px;
+    border-radius: 27.5px;
 }
 
 .hidrogelCaracteristicasImagen p{
     padding-top: 20px;
     color: #f9f8fe;
-    font-size: 1rem;
+    font-size: 15px;
 }
 
-.hidrogelCaracteristicasParrafo, .hidrogelCaracteristicasParrafo h2{
+.hidrogelCaracteristicasParrafo h2{
     color: white;
     font-size: 60px;
 }
 
 .hidrogelCaracteristicasParrafo p{
     padding: 1.2rem;
-    font-size: 18px;
+    font-size: 15px;
     text-align: start;
     border-top: 0.4rem solid #642c94;
     margin-left: 500px;
     margin-right: 20px;
 }
 
-.hidrogelCaracteristicasParrafo button{
+.seccionHydrogel button{
     background-color: #5c268c;
     width: 180px;
     height: 60px;
     border-radius: 5px;
     border: none;
-    font-size: 18px;
-    margin: 40px;
+    margin: 20px;
+    margin-left: 60px;
 }
 
-.hidrogelCaracteristicasParrafo button a{
+.seccionHydrogel button a{
     text-decoration: none;
     color: white;
 }
 
-/*Contactanos*/
+.seccionHydrogel button:hover{
+    background-color: #4524A3;
+}
+
+/*-----------------------------------------------Contactanos------------------------------------------------------*/
 
 .seccionContactanos{
     position: relative;
@@ -463,7 +439,6 @@ section{
 
 .seccionContactanos img{
     width: 100%;
-    height: 600px;
 }
 
 .seccionContactanos div{
@@ -487,12 +462,13 @@ section{
 }
 
 .seccionContactanos-texto button{
-    width: 200px;
+    width: 230px;
     height: 80px;
     background-color: transparent;
     border: 2px solid white;
     margin-top: 50px;
-    margin-right: 265px;
+    margin-right: 235px;
+    padding: 0;
 }
 
 
@@ -501,16 +477,18 @@ section{
     color: white;
     text-decoration: none;
     font-size: 22px;
-    padding: 25px 18px;
+    padding: 14%;
+}
+
+.seccionContactanos-texto button:hover{
+    background-color: white;
 }
 
 .seccionContactanos-texto button a:hover{
     color: #0f6d99;
-    background-color: white;
-    padding: 25px 18px 25px 18px;
 }
 
-/*Extras*/
+/*-----------------------------------------------------Extras-----------------------------------------------------*/
 
 .seccionExtra{
     display: grid;
@@ -537,13 +515,13 @@ section{
 
 .seccionChat{
     position: fixed;
-    right: -20px;
+    right: -10px;
     bottom: 15px;
     list-style:none;
 }
 
 .btn-group ul ul {
-    padding-left: 80px;
+    padding-left: 70px;
     background-color: transparent;
     color: transparent;
     border: none;
@@ -585,9 +563,10 @@ section{
     transform: scale(1.2, 1.2);
 }
 
-/*--------Pie de Pagina---------*/
+/*-----------------------------------------------Pie de Pagina---------------------------------------------------------*/
 
 footer{
+    width: 100%;
     padding: 1.5rem;
     background-color: #25262c;
     border-bottom: 5px solid #5a5a5a;
@@ -597,7 +576,7 @@ footer{
     color: white;
     margin-top: 20px;
     font-weight: 450;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .footer__piepagina{
@@ -620,9 +599,9 @@ footer{
 
 .footer__piepagina--ftrSuscribete--form--p{
     color: white;
-    font-size: 15px;
     text-align: justify;
     margin-left: 20px;
+    font-size: 14px;
 }
 
 .footer__piepagina--ftrSuscribete--form--input{
@@ -641,6 +620,7 @@ footer{
 
 .footer__piepagina--ftrSuscribete--form--input::placeholder{
     color: white;
+    font-size: 15px;
 }
 
 .footer__piepagina--ftrSuscribete--form--input:hover {
@@ -662,6 +642,7 @@ footer{
     border: none;
     color: white;
     margin-left: 85px;
+    font-size: 15px;
 }
 
 .footer__piepagina--ftrInformacion--ul{
@@ -674,7 +655,7 @@ footer{
 }
 
 .footer__piepagina--ftrInformacion--ul--li--a{
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     text-decoration: none;
 }
@@ -728,7 +709,7 @@ footer{
 .footer__piepagina--ftrSecciones--ul--li--a{
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -737,8 +718,8 @@ footer{
 }
 
 .footer__piepagina--ftrLogo--img{
-    width:210px;
-    margin-top: 18px;
+    margin-top: 25px;
+    margin-left: 20px;
 }
 
 .footer__piepagina--ftrLogo--p{
@@ -752,6 +733,7 @@ footer{
 .footer__piepagina--ftrLogo--redes_sociales{
     padding-left: 30px;
     margin: 20px;
+    margin-top: 50px;
 }
 
 .footer__piepagina--ftrLogo--redes_sociales--a{
@@ -766,7 +748,48 @@ footer{
     transform: scale(1.08, 1.08);
 }
 
-/*Productos*/
+/*----------------------------------------------------Productos--------------------------------------------------*/
+
+
+.productosMarcas-Titulo{
+    color: #979797;
+}
+
+.seccionProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seccionProductos h3{
+    padding: 8px;
+}
+
+.seccionProductos a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #9c9c9c;
+    margin-right: 27px;
+    padding: 20px;
+}
+
+.seccionProductos a:hover{
+    color: #4b6b9c;
+}
+.seccionProductos img:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.productosMarcas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 40px;
+    margin-bottom: 80px;
+}
 
 .grid-Celulares{
     display: grid;
@@ -840,48 +863,8 @@ footer{
     height: 350px;
 }
 
-.productosMarcas-Titulo{
-    color: #979797;
-}
 
-.seccionProductos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.seccionProductos p{
-    padding: 8px;
-}
-
-.seccionProductos a{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.4rem;
-    color: #9c9c9c;
-    margin-right: 27px;
-    padding: 20px;
-}
-
-.seccionProductos a:hover{
-    color: #4b6b9c;
-}
-.seccionProductos img:hover{
-    transform: scale(1.05, 1.05);
-}
-
-.productosMarcas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
-    margin: 40px;
-    margin-bottom: 80px;
-}
-
-
-/*Ofertas*/
+/*----------------------------------------------------Ofertas--------------------------------------------------------*/
 
 .grid-Ofertas{
     display: grid;
@@ -923,7 +906,7 @@ footer{
 }
 
 
-/*CONTACTO*/
+/*--------------------------------------------------------CONTACTO-----------------------------------------------------*/
 
 .fondoContacto{
     position: relative;
@@ -956,6 +939,7 @@ footer{
 
 .textFormulario h3{
     padding: 50px;
+    color: #5c268c;
 }
 
 .container{
@@ -971,10 +955,6 @@ footer{
 
 .container input, .container select{
     width: 400px;
-}
-
-.textFormulario h3{
-    color: #5c268c;
 }
 
 .container h3{
@@ -1004,7 +984,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 825px;
 }
     
-
 .formButton button{
     width: 370px;
     padding: 20px;
@@ -1055,13 +1034,12 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 2rem;
 }
 
-.contacto-Mensajeria p{
-    font-size: 18px;
+.contacto-Mensajeria h4{
     font-weight: 410;
     padding-top: 5px;
 }
 
-.contacto-Mensajeria p a{
+.contacto-Mensajeria h4 a{
     text-decoration: none;
     color: #212529;
 }
@@ -1078,7 +1056,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-/*-------------Quienes Somos--------------*/
+/*------------------------------------------------------Quienes Somos--------------------------------------------------*/
 
 .fondoQuienes-somos{
     position: relative;
@@ -1109,15 +1087,18 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: justify;
     padding: 20px;
     font-weight: 500;
+    font-size: 16px;
 }
 
 .seccionQuienessomos h2{
+    color: #511e7e;
     font-size: 1.4rem;
     border-bottom: 2px solid #5c268c;
     margin-right: 360px;
 }
 
 .textoQuienessomos{
+    font-size: 16px;
     text-align: center;
     font-weight: 500;
 }
@@ -1131,7 +1112,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* Media Queries */
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .contenedor{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1213,19 +1194,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
-        top: 1285px;
-    }
-
-    .nuevoLanzamiento{
-        left: 30px;
-    }
-    
-    .nuevoLanzamiento1{
-        left: 370px;
-    }
-    
-    .nuevoLanzamiento2{
-        left: 710px;
+        top: 5px;
+        left: 10px;
     }
 
     .seccionNovedades iframe{
@@ -1253,16 +1223,20 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 0;
     }
 
+    .seccionContactanos img{
+        height: 600px;
+    }
+
     .seccionChat img, .seccionArriba a img{
         width: 70%;
     }
 
     .btn-group ul ul {
-        padding-left: 85px;
+        padding-left: 75px;
     }
 
     .dropdown-item img{
-        width: 80%;
+        width: 70%;
     }
 
     .seccionExtra img{
@@ -1345,9 +1319,36 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-@media screen  and (min-width: 480px) and (max-width: 768px){
+@media screen  and (min-width: 481px) and (max-width: 768px){
+    .contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5 , auto); ;
+        grid-template-areas: "contHeader contHeader contHeader"
+                             "contMain contMain contMain"
+                             "contMain contMain contMain"
+                             "contMain contMain contMain"
+                             "contFooter contFooter contFooter";
+    }
+
+    header{
+        width: 90%;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    footer{
+        width: 90%;
+    }
     
 }
+
+/*----------------------------------------------------*/
+/*-----------------------------------*/
+/**/
 
 @media screen and (min-width: 320px) and (max-width: 480px){
 
@@ -1367,7 +1368,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     h2{
-        font-size: 20px;
+        font-size: 24px;
     }
 
     h3{
@@ -1416,12 +1417,13 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .header__nav--botonesInicio--form--input{
-        width: 380px;
+        text-size-adjust: 60%;
+        width: 165%;
         transition: none !important;
     }
 
     .header__nav--botonesInicio--form--input:hover{
-        width: 380px;
+        width: 165%;
     }
 
     .header__nav--botonesInicio--form--input::placeholder{
@@ -1430,7 +1432,8 @@ input[type=number]::-webkit-outer-spin-button {
 
     .header__nav--botonesInicio--form--button{
         top: 222px;
-        right: 30px;
+        right: 20%;
+        z-index: 1;
     }
 
     .header__nav--botonesLateral--modal-header .modal-title{
@@ -1532,21 +1535,24 @@ input[type=number]::-webkit-outer-spin-button {
         top: 810px;
     }
 
-    .nuevoLanzamiento{
-        left: 25px;
+    .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
+        top: 5px;
+        left: 5px;
+        z-index: 1;
     }
 
-    .nuevoLanzamiento1{
-        left: 153px;
+    .colorPrecio{
+        font-size: 11px;
     }
 
-    .nuevoLanzamiento2{
-        left: 282px;
+    .precioAnterior{
+        font-size: 10px;
     }
+
+    /*Novedades -- Responsive Celular*/
     
     .seccionNovedades{
         background-color: #262626;
-        height: 112em;
     }
 
     .seccionNovedades p{
@@ -1558,43 +1564,32 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .novedadesSamsung iframe, .novedadesIphone iframe, .novedadesSamsungTablet iframe{
-        width: 100%;
-        height: 60%;
+        margin: 0px;
+        width: 90%;
+        height: 250px;
         float: none;
-        margin: 0;
     }
 
     .novedadesSamsung-texto h2, .novedadesIphone-texto h2, .novedadesSamsungTablet-texto h2{
         margin-top: 5px;
     }
 
-    .novedadesSamsungTablet{
-        margin: 0;
-    }
-
-    .colorPrecio{
-        font-size: 11px;
-    }
-
-    .precioAnterior{
-        font-size: 10px;
-    }
+    /*Hidrogel -- Responsive Celular*/
 
     .seccionHydrogel{
-        height: 55%;
+        height: 60%;
         margin: 0;
     }
 
     .hidrogelImagen{
-        width: 55%;
-        height: 300px;
-        margin-top: 30px;
+        width: 80%;
+        float: none;
     }
 
     .hidrogelCaracteristicasImagen img{
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
     }
 
     .hidrogelCaracteristicasParrafo h2{
@@ -1602,22 +1597,34 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .hidrogelCaracteristicasParrafo p{
-        font-size: 9px;
+        font-size: 11px;
         text-align: start;
-        margin-left: 220px;
         border-top: 0.2rem solid #642c94;
+        padding: 0.5rem;
+        margin: 20px;
     }
 
-    .hidrogelCaracteristicasParrafo button{
-        width: 80px;
-        height: 40px;
-        margin: 20px;
-        font-size: 11px;
+    .hidrogelCaracteristicasImagen{
+        justify-content: space-between;
     }
 
     .hidrogelCaracteristicasImagen p{
         font-size: 11px;
     }
+
+    .seccionHydrogel button{
+        width: 30%;
+        height: 30px;
+        margin-left: 10%;
+        border-radius: 2px;
+    }
+
+    .seccionHydrogel button a{
+        font-size: 14px;
+    }
+
+
+    /*Contactanos -- Responsive Celular*/
 
     .seccionContactanos{
         margin: 0;
@@ -1625,7 +1632,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .seccionContactanos img{
         width: 100%;
-        height: 500px;
+        height: 400px;
     }
 
     .seccionContactanos-texto h2{
@@ -1639,39 +1646,48 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .seccionContactanos-texto button{
-        margin-right: 130px;
-        width: 40%;
+        margin-right: 20%;
+    }
+
+    .seccionContactanos-texto button{
+        width: 45%;
         height: 60px;
+        margin-right: 30%;
     }
 
     .seccionContactanos-texto button a{
-        font-size: 14px;
+        font-size: 15px;
     }
 
-    .seccionContactanos-texto button a:hover{
-        padding: 14.6%;
-    }
+    /*Chat -- Responsive Celular*/
 
     .seccionChat{
         bottom: 15px;
+        right: -30px;
     }
-
+    
     .seccionChat img{
-        width: 50%;
+        width: 45%;
     }
 
     .dropdown-item img{
-        width: 70%;
+        width: 90%;
+    }
+
+    .btn-group ul ul{
+        padding-left: 100px;
     }
 
     .seccionArriba{
         bottom: 30px;
-        left: 0;
+        left: -5px;
     }
 
     .seccionArriba a img{
-        width: 55%;
+        width: 50%;
     }
+
+    /*Extra -- Responsive Celular*/
 
     .seccionExtra{
         grid-template-columns: 1fr;
@@ -1683,12 +1699,32 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 1rem;
     }
 
-    .btn-group ul ul{
-        padding-left: 90px;
-    }
 
     /*----------------------------RESPONSIVE CELULAR----------------------------*/
     /*--------------------------------PRODUCTOS------------------------------------*/
+
+    .seccionProductos{
+        padding-left: 32px;
+    }
+
+    .seccionProductos img{
+        width: 60%;
+        height: 48%;
+    }
+
+    .seccionProductos a{
+        padding: 5px;
+    }
+
+    .productosMarcas img{
+        width: 50%;
+        margin: 6px;
+    }
+
+    .productosMarcas {
+        flex-direction: row;
+        align-items: center;
+    }
 
     .grid-Celulares, .grid-Tablet, .grid-Relojes, .grid-Ofertas{
         display: grid;
@@ -1739,28 +1775,6 @@ input[type=number]::-webkit-outer-spin-button {
         right: -80px;
     }
 
-    .seccionProductos{
-        padding-left: 32px;
-    }
-
-    .seccionProductos img{
-        width: 60%;
-        height: 48%;
-    }
-
-    .seccionProductos a{
-        padding: 5px;
-    }
-
-    .productosMarcas img{
-        width: 50%;
-        margin: 6px;
-    }
-
-    .productosMarcas {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .seccionExtra img{ 
         width: 15%;
@@ -1887,7 +1901,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .fondoQuienes-somos div{
-        left: 62%;
+        left: 50%;
     }
 
     .fondoQuienes-somos h1{
@@ -1901,6 +1915,10 @@ input[type=number]::-webkit-outer-spin-button {
 
     .seccionQuienessomos h2{
         margin-right: 20px;
+    }
+
+    .parrafoQuienessomos, .textoQuienessomos{
+        font-size: 14px;
     }
 
     /*----------------------------RESPONSIVE CELULAR----------------------------*/
@@ -1925,6 +1943,10 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 0px;
     }
 
+    .footer__piepagina--ftrSuscribete--form{
+        padding-left: 60px;
+    }
+
     .footer__piepagina--ftrInformacion--ul{
         padding-left: 70px;
         padding-right: 70px;
@@ -1947,24 +1969,24 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 10px;
     }
 
-    .footer__piepagina--ftrLogo--img{
-        width: 65%;
+    .footer__piepagina--ftrLogo--redes_sociales{
+        margin-top: 20px;
     }
+
     .footer__piepagina--ftrLogo--redes_sociales--a--img{
         width: 10%;
     }
 
-    
     .footer__piepagina--ftrLogo--p{
         padding: 0;
     }
 
     .footer__piepagina--ftrLogo--img{
-        padding-left: 120px;
+        padding-left: 20%;
     }
 
     .footer__piepagina--ftrLogo--redes_sociales{
-        padding-left: 120px;
+        padding-left: 30%;
     }
 
 }
