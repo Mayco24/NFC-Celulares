@@ -397,7 +397,7 @@ section{
 }
 
 .hidrogelCaracteristicasParrafo h2{
-    color: white;
+    color: #FFFFFF;
     font-size: 60px;
 }
 
@@ -511,7 +511,7 @@ section{
     font-size: 1.1rem;
 }
 
-/*Seccion Chat*/
+/*--------------------------------------------------Seccion Chat--------------------------------------------------*/
 
 .seccionChat{
     position: fixed;
