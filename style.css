@@ -33,7 +33,6 @@ body{
     grid-area: contFooter;
 }
 
-
 h1{
     font-weight: 600;
     color: #707070;
@@ -107,42 +106,51 @@ header{
     padding: 5px;
 }
 
+.header__nav--botonesInicio--form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c268c;
+}
+
+.header__nav--botonesInicio--form:hover{
+    border: 1.5px solid white;
+    padding: 0;
+    margin: 0;
+}
+
 .header__nav--botonesInicio--form--button{
-    position: absolute;
     background-color: transparent;
-    top: 20px;
-    right: 160px;
     border: none;
+    padding: 5px;
 }
 
 .header__nav--botonesInicio--form--input{
-    height: 35px;
-    width: 200px;
+    height: 5.5vh;
+    width: 32vh;
     transition: .3s linear;
     background-color: #5c268c;
     color: white;
     border: none;
     padding: 10px;
     font-size: 16px;
+    float: left;
 }
 
 .header__nav--botonesInicio--form--input:hover{
-    width: 250px;
+    outline: none;
+    width: 40vh;
+}
+
+.header__nav--botonesInicio--form--input:focus{
+    outline: none;
 }
 
 .header__nav--botonesInicio--form--input::placeholder{
     color: white;
     font-size: 14px;
-}
-
-.header__nav--botonesInicio--form--input:focus{
-    border: 1.5px solid white;
     outline: none;
 }
-
-.header__nav--botonesInicio--form--input:active{
-    padding: 5px;
-} 
 
 .header__nav--botonesLateral--button{
     padding: 15px;
@@ -391,7 +399,6 @@ section{
 }
 
 .hidrogelCaracteristicasImagen p{
-    color: white;
     padding-top: 20px;
     color: #f9f8fe;
     font-size: 15px;
@@ -513,7 +520,7 @@ section{
     font-size: 1.1rem;
 }
 
-/*--------------------------------------------------Seccion Chat--------------------------------------------------*/
+/*Seccion Chat*/
 
 .seccionChat{
     position: fixed;
@@ -740,6 +747,7 @@ footer{
 
 .footer__piepagina--ftrLogo--redes_sociales--a{
     padding-left: 8px;
+    color: transparent;
 }
 
 .footer__piepagina--ftrLogo--redes_sociales--a--img{
@@ -907,8 +915,7 @@ footer{
     font-size: 1.2rem;
 }
 
-
-/*--------------------------------------------------------CONTACTO-----------------------------------------------------*/
+/*-----------------------------------------------CONTACTO--------------------------------------------------*/
 
 .fondoContacto{
     position: relative;
@@ -920,7 +927,7 @@ footer{
 .fondoContacto div{
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: 80%;
     transform: translate(-15%, -50%);
     border-bottom: 4px solid #5c268c;
 }
@@ -1070,7 +1077,7 @@ input[type=number]::-webkit-outer-spin-button {
 .fondoQuienes-somos div{
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: 71%;
     transform: translate(-15%, -50%);
     border-bottom: 4px solid #5c268c;
 }
@@ -1114,6 +1121,12 @@ input[type=number]::-webkit-outer-spin-button {
 /* Media Queries */
 
 
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------RESPONSIVE LAPTOP--------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .contenedor{
         display: grid;
@@ -1132,6 +1145,9 @@ input[type=number]::-webkit-outer-spin-button {
     .colorPrecio{
         font-size: 21px;
     }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*--------------------------------HEADER------------------------------------*/
 
     header{
         justify-content: space-evenly;
@@ -1161,6 +1177,9 @@ input[type=number]::-webkit-outer-spin-button {
     .header__nav--botonesInicio--form--input:hover{
         width: 200px;
     }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*---------------------------------MAIN------------------------------------*/
 
     .seccionCarrusel .carousel-inner img{
         height: 431px;
@@ -1200,6 +1219,8 @@ input[type=number]::-webkit-outer-spin-button {
         left: 10px;
     }
 
+    /*Novedades -- Responsive Laptop*/
+
     .seccionNovedades iframe{
         width: 55%;
     }
@@ -1216,6 +1237,8 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 5px;
     }
 
+    /*Hidrogel -- Responsive Laptop*/
+
     .hidrogelImagen{
         width: 500px;
     }
@@ -1225,9 +1248,13 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 0;
     }
 
+    /*Contactanos -- Responsive Laptop*/
+
     .seccionContactanos img{
         height: 600px;
     }
+
+    /*Chat -- Responsive Laptop*/
 
     .seccionChat img, .seccionArriba a img{
         width: 70%;
@@ -1241,12 +1268,17 @@ input[type=number]::-webkit-outer-spin-button {
         width: 70%;
     }
 
+    /*Extra -- Responsive Laptop*/
+
     .seccionExtra img{
         width: 18%;
         padding-left: 0;
         padding-top: 10px;
         margin: 10px;
     }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*---------------------------------FOOTER----------------------------------*/
 
     .footer__piepagina{
         padding-right: 10px;
@@ -1295,15 +1327,22 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 11px;
     }
 
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*--------------------------------PRODUCTOS------------------------------------*/
+
     .seccionProductos img{
         width: 60px;
     }
 
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*--------------------------------CONTACTO------------------------------------*/
 
-    /*Contacto*/
     .contacto-Mensajeria{
         padding: 0.5rem;
     }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*--------------------------------QUIENES SOMOS------------------------------------*/
 
     .fondoQuienes-somos img, .fondoContacto img{
         width: 1006px;
@@ -1319,38 +1358,551 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------RESPONSIVE TABLET------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
 
-
-@media screen  and (min-width: 481px) and (max-width: 768px){
+@media screen  and (min-width: 480px) and (max-width: 768px){
     .contenedor{
-        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(5 , auto); ;
-        grid-template-areas: "contHeader contHeader contHeader"
-                             "contMain contMain contMain"
-                             "contMain contMain contMain"
-                             "contMain contMain contMain"
-                             "contFooter contFooter contFooter";
+        grid-template-areas: "contHeader"
+                             "contMain"
+                             "contMain"
+                             "contMain"
+                             "contFooter";
     }
 
-    header{
-        width: 90%;
+    h1{
+        font-size: 24px;
     }
 
-    main{
-        width: 90%;
+    h2{
+        font-size: 20px;
+        margin: 0;
     }
 
-    footer{
-        width: 90%;
+    h3{
+        font-size: 16px;  
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 11px;
+    }
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------HEADER------------------------------------*/
+
+    .header__nav{
+        padding: 5px;
+    }
+
+    .header__nav--menu{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
+    .header__nav--menu--ul--li{
+        align-self: flex-start;
+        font-size: 14px;
+    }
+
+    .header__nav--menu--ul--li--a{
+        padding: 8px;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    
+    .header__nav--botonesInicio--form--input::placeholder{
+        font-size: 14px;
+    }
+
+    .header__nav--botonesInicio--form--button{
+        top: 222px;
+        right: 20%;
+        z-index: 1;
+    }
+
+    .header__nav--botonesLateral--modal-header .modal-title{
+        font-size: 18px;
+    }
+
+    .header__nav--botonesLateral--modal-body--a--img{
+        width: 65%;
+    }
+
+    .header__nav--botonesLateral--button img{
+        width: 90%;
+    }
+
+    .header__nav--botonesLateral--modal-body--form--form-group--input-group--input{
+        height: 40px;
+    }
+
+    .header__nav--botonesLateral--modal-body--form--form-group--input-group--input::placeholder{
+        font-size: 14px;
+    }
+
+    .header__nav--botonesLateral--modal-footer--a{
+        font-size: 12px;
+    }
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------MAIN------------------------------------*/
+
+    .seccionCarrusel .carousel-inner img{
+        height: 400px;
+    }
+
+    .seccionLanzamiento h2::after, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::after, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::after, .seccionNovedadesTitulo::before, .seccionTitulo::after, .seccionTitulo::before{
+        width: 200px;
+        top: 2rem;
+    }
+
+    .seccionLanzamiento h2::after, .seccionAlg-ofertas h2::after, .seccionNovedadesTitulo::after, .seccionTituloCel::after, .seccionTitulo::after{
+        left: -200px;
+    }
+    
+    .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::before, .seccionTituloCel::before, .seccionTitulo::before{
+        right: -200px;
+    }
+
+    .grid-masVendido img, .grid-Lanzamiento img, .grid-algunasOfertas img{
+        width: 58%;
+        height: 40%;
+    }
+    
+    .lanzItem1 img{
+        width: 82%;
+    }
+
+    .lanzItem2 img{
+        width: 99%;
+    }
+
+    .algOfertas-item1 img{
+        width: 70%;
+    }
+
+    .algOfertas-item3 img{
+        width: 82%;
+    }
+
+    .colorPrecio{
+        font-size: 16px;
+    }
+
+    .precioAnterior{
+        font-size: 14px;
+    }
+
+    .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
+        height: 4%;
+        width: 22%;
+        font-size: 11px;
+        top: 5px;
+        width: 22%;
+        height: 5%;
+    }
+
+    /*Novedades -- Responsive Tablet*/
+
+    .seccionNovedades{
+        background-color: #262626;
+    }
+
+    .seccionNovedades p{
+        font-size: 14px;
+    }
+
+    .seccionNovedades h2{
+        font-size: 20px;
+    }
+
+    .novedadesSamsung iframe, .novedadesIphone iframe, .novedadesSamsungTablet iframe{
+        margin: 0px;
+        width: 95%;
+        height: 350px;
+        float: none;
+    }
+
+    .novedadesSamsung-texto h2, .novedadesIphone-texto h2, .novedadesSamsungTablet-texto h2{
+        margin-top: 5px;
+    }
+
+
+    /*Hidrogel -- Responsive Tablet*/
+
+    .seccionHydrogel{
+        height: 60%;
+        margin: 0;
+    }
+
+    .hidrogelImagen{
+        width: 60%;
+        float: none;
+    }
+
+    .hidrogelCaracteristicasImagen img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .hidrogelCaracteristicasParrafo h2{
+        font-size: 28px;
+    }
+
+    .hidrogelCaracteristicasParrafo p{
+        color: #ffffff;
+        font-size: 14px;
+        text-align: start;
+        border-top: 0.2rem solid #642c94;
+        padding: 0.5rem;
+        margin: 20px;
+    }
+
+    .hidrogelCaracteristicasImagen{
+        justify-content: space-around;
+    }
+
+    .hidrogelCaracteristicasImagen p{
+        font-size: 14px;
+    }
+
+    .seccionHydrogel button{
+        width: 20%;
+        height: 40px;
+        margin-left: 8%;
+        border-radius: 2px;
+    }
+
+    .seccionHydrogel button a{
+        font-size: 14px;
+    }
+
+    /*Contactanos -- Responsive Tablet*/
+
+    .seccionContactanos{
+        margin: 0;
+    }
+
+    .seccionContactanos img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .seccionContactanos-texto h2{
+        font-size: 32px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .seccionContactanos-texto p{
+        font-size: 14px;
+        padding-left: 45px;
+        margin-right: 100px;
+    }
+
+    .seccionContactanos-texto button{
+        margin-right: 20%;
+    }
+
+    .seccionContactanos-texto button{
+        width: 45%;
+        height: 60px;
+        margin-right: 38%;
+    }
+
+    .seccionContactanos-texto button a{
+        font-size: 15px;
+    }
+
+    
+    /*Chat -- Responsive Tablet*/
+
+    .seccionChat{
+        bottom: 15px;
+        right: -30px;
+    }
+    
+    .seccionChat img{
+        width: 55%;
+    }
+
+    .dropdown-item img{
+        width: 95%;
+    }
+
+    .btn-group ul ul{
+        padding-left: 100px;
+    }
+
+    .seccionArriba{
+        bottom: 30px;
+        left: -5px;
+    }
+
+    .seccionArriba a img{
+        width: 60%;
+    }
+
+    /*Extra -- Responsive Tablet*/
+
+    .seccionExtra{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .seccionExtra img{ 
+        width: 22%;
+    }
+
+    .seccionExtra h4 {
+        font-size: 0.8rem;
+    }
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------PRODUCTOS------------------------------------*/
+
+    .seccionProductos{
+        padding-left: 8%;
+        margin: 20px;
+    }
+
+    .seccionProductos img{
+        width: 60%;
+        height: 48%;
+    }
+
+    .seccionProductos a{
+        padding: 5px;
+    }
+
+    .productosMarcas img{
+        width: 80%;
+    }
+
+    .productosMarcas {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .grid-Celulares, .grid-Tablet, .grid-Relojes, .grid-Ofertas{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-self: start;
+    }
+
+    .grid-Celulares img{
+        width: 38%;
+        height: 40%;
+    }
+
+    .celItem6 img{
+        width: 64%;
+    }
+    
+    .grid-Tablet img{
+        width: 58%;
+        height: 40%;
+    }
+
+    .tabletItem2 img{
+        width: 83%;
+    }
+
+    .tabletItem5 img{
+        width: 66.25%;
+    }
+
+    .grid-Relojes img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .relItem1 img{
+        width: 47%;
+    }
+
+    .grid-Celulares div,.grid-Tablet div, .grid-Relojes div{
+        background-color: white;
+        border-radius: 0.5em;
+        align-self: flex-end;
+    }
+
+    .seccionTituloCel{
+        font-size: 20px ;
+    }
+
+    .seccionTituloCel::after, .seccionTituloCel::before{
+        top: 0.8rem;
+        width: 190px;
+    }
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------OFERTAS------------------------------------*/
+
+    .grid-Ofertas h3{
+        font-size: 16px;
+    }
+
+    .grid-Ofertas div{
+        border-radius: 0.5em;
+    }
+
+    .grid-Ofertas img{
+        width: 55%;
+        height: 45%;
+    }
+
+    .oferItem1 img, .oferItem5 img, .oferItem8 img{
+        width: 77%;
+    }
+
+    .oferItem4 img{
+        width: 66%;
+        height: 40%;
+    }
+
+    .oferItem4 div{
+        height: 50%;
+    }
+
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------CONTACTO------------------------------------*/
+
+    .fondoContacto img{
+        width: 100%;
+    }
+
+    .fondoContacto div{
+        left: 73%;
+    }
+
+    .fondoContacto h1{
+        letter-spacing: 0.2rem;
+    }
+
+    .contactoIframe{
+        width: 90%;
+    }
+
+    .contacto-redesSociales img{
+        padding: 28px;
+    }
+
+    .formButton button{
+        padding: 0;
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding: 0;
+    }
+
+    .container input, .container select{
+        width: 100%;
+        height: 80%;
+    }
+
+    .formConsulta{
+        width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder, .form-select{
+        font-size: 14px;
+    }
+
+    .contacto-redesSociales img{
+        width: 90%;
+    }
+
+    .contacto-Mensajeria{
+        display: grid;
+        grid-template-rows: repeat(1,3fr);
+        gap: 20px;
+        text-align: center;
+        background-color: #f1f1f1;
+        padding: 2rem;
+    }
+
+    .contacto-MensajeriaColor-Llamanos{
+        border-left: 3px solid #5c268c;
+        border-right: 3px solid #5c268c;
+    }
+
+    .contacto-Mensajeria p, .contacto-MensajeriaColor{
+        font-size: 15px;
+        font-weight: 410;
+        padding-top: 5px;
+    }
+
+    .contacto-Mensajeria h4 a{
+        font-size: 11px;
+    }
+    
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------QUIENES SOMOS------------------------------------*/
+
+
+    .fondoQuienes-somos img{
+        width: 100%;
+    }
+
+    .fondoQuienes-somos div{
+        left: 60%;
+    }
+
+    .fondoQuienes-somos h1{
+        letter-spacing: 0.2rem;
+    }
+
+    .imgQuienessomos-lateral{
+        width: 40%;
+        height: 60%;
+    }
+
+    .seccionQuienessomos h2{
+        padding: 0;
+        margin: 2%;
+        margin-right: 360px;
+    }
+
+    .textoQuienessomos {
+        padding: 10px;
+    }
+
+    .parrafoQuienessomos, .textoQuienessomos{
+        font-size: 14px;
+    }
+
 }
 
-/*----------------------------------------------------*/
-/*-----------------------------------*/
-/**/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------RESPONSIVE CELULAR------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 320px) and (max-width: 480px){
 
@@ -1366,11 +1918,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     h1{
-        font-size: 28px;
+        font-size: 24px;
     }
 
     h2{
-        font-size: 24px;
+        font-size: 18px;
+        margin: 0;
     }
 
     h3{
@@ -1417,17 +1970,7 @@ input[type=number]::-webkit-outer-spin-button {
     .header__nav--menu--ul--li--a{
         padding: 8px;
     }
-
-    .header__nav--botonesInicio--form--input{
-        text-size-adjust: 60%;
-        width: 165%;
-        transition: none !important;
-    }
-
-    .header__nav--botonesInicio--form--input:hover{
-        width: 165%;
-    }
-
+    
     .header__nav--botonesInicio--form--input::placeholder{
         font-size: 14px;
     }
@@ -1479,7 +2022,6 @@ input[type=number]::-webkit-outer-spin-button {
     .seccionCarrusel .carousel-inner img{
         height: 200px;
     }
-
     .header__nav--botonesLateral--modal-body{
         background: #4389A2;
     }
@@ -1500,21 +2042,16 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .grid-masVendido h3,.grid-Lanzamiento h3, .grid-algunasOfertas h3, .seccionExtra h3{
-        font-size: 9px;
+        font-size: 9.5px;
     }
 
     .grid-masVendido img, .grid-Lanzamiento img, .grid-algunasOfertas img{
-        width: 75px;
-        height: 150px;
+        width: 80%;
+        height: 70%;
     }
 
     .lanzItem2 img{
-        width: 100px;
-    }
-
-
-    .grid-algunasOfertas div,.grid-Lanzamiento div{
-        align-self: stretch;
+        width: 100%;
     }
 
     .seccionMasVendido h2::after, .seccionMasVendido h2::before, .seccionLanzamiento h2::after, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::after, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::after, .seccionNovedadesTitulo::before,.seccionTitulo::after, .seccionTitulo::before, .seccionTituloCel::after, .seccionTituloCel::before{
@@ -1531,16 +2068,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
-        height: 8px;
-        width: 18px;
-        font-size: 5px;
-        top: 810px;
-    }
-
-    .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
         top: 5px;
         left: 5px;
         z-index: 1;
+        height: 4%;
+        width: 22%;
+        font-size: 7px;
     }
 
     .colorPrecio{
@@ -1599,6 +2132,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .hidrogelCaracteristicasParrafo p{
+        color: #ffffff;
         font-size: 11px;
         text-align: start;
         border-top: 0.2rem solid #642c94;
@@ -1622,7 +2156,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .seccionHydrogel button a{
-        font-size: 14px;
+        font-size: 11px;
     }
 
 
@@ -1639,6 +2173,8 @@ input[type=number]::-webkit-outer-spin-button {
 
     .seccionContactanos-texto h2{
         font-size: 28px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
     .seccionContactanos-texto p{
@@ -1694,19 +2230,31 @@ input[type=number]::-webkit-outer-spin-button {
     .seccionExtra{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
-        padding: 0px;
+        padding: 1rem;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        
     }
 
-    .seccionExtra h4{
-        font-size: 1rem;
+    .seccionExtra img{ 
+        width: 13%;
     }
+
+    .seccionExtra h4 {
+        font-size: 0.8rem;
+    }
+
 
 
     /*----------------------------RESPONSIVE CELULAR----------------------------*/
     /*--------------------------------PRODUCTOS------------------------------------*/
 
+
+
     .seccionProductos{
-        padding-left: 32px;
+        padding-left: 8%;
+        margin: 20px;
     }
 
     .seccionProductos img{
@@ -1733,21 +2281,38 @@ input[type=number]::-webkit-outer-spin-button {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        align-items: stretch;
+        justify-self: start;
     }
 
     .grid-Celulares img{
-        width: 60px;
-        height: 120px;
+        width: 60%;
+        height: 50%;
+    }
+
+    .celItem6 img{
+        width: 102%;
     }
     
     .grid-Tablet img{
-        width: 90px;
-        height: 120px;
+        width: 75%;
+        height: 50%;
     }
+
+    .tabletItem2 img{
+        width: 107%;
+    }
+
+    .tabletItem5 img{
+        width: 85%;
+    }
+
     .grid-Relojes img{
-        width: 70px;
-        height: 120px;
+        width: 60%;
+        height: 50%;
+    }
+
+    .relItem1 img{
+        width: 70%;
     }
 
     .grid-Celulares div,.grid-Tablet div, .grid-Relojes div{
@@ -1777,15 +2342,6 @@ input[type=number]::-webkit-outer-spin-button {
         right: -80px;
     }
 
-
-    .seccionExtra img{ 
-        width: 15%;
-    }
-
-    .seccionExtra h4 {
-        font-size: 0.8rem;
-    }
-
     /*----------------------------RESPONSIVE CELULAR----------------------------*/
     /*--------------------------------OFERTAS------------------------------------*/
 
@@ -1798,17 +2354,18 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .grid-Ofertas img{
-        width: 60px;
-        height: 120px;
+        width: 60%;
+        height: 50%;
     }
 
-    .oferItem1 img , .oferItem5 img{
-        width: 80px;
+    .oferItem1 img, .oferItem5 img, .oferItem8 img{
+        width: 85%;
     }
 
-    .oferItem8 img{
-        width: 90px;
+    .oferItem4 img{
+        width: 72%;
     }
+
 
     /*----------------------------RESPONSIVE CELULAR----------------------------*/
     /*--------------------------------CONTACTO------------------------------------*/
@@ -1819,7 +2376,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .fondoContacto div{
-        left: 50%;
+        left: 52%;
     }
 
     .fondoContacto h1{
@@ -1897,13 +2454,14 @@ input[type=number]::-webkit-outer-spin-button {
     /*----------------------------RESPONSIVE CELULAR----------------------------*/
     /*--------------------------------QUIENES SOMOS------------------------------------*/
 
+
     .fondoQuienes-somos img{
         width: 100%;
         height: 200px;
     }
 
     .fondoQuienes-somos div{
-        left: 50%;
+        left: 60%;
     }
 
     .fondoQuienes-somos h1{
@@ -1916,7 +2474,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .seccionQuienessomos h2{
-        margin-right: 20px;
+        margin: 20px;
+    }
+
+    .textoQuienessomos {
+        padding: 10px;
     }
 
     .parrafoQuienessomos, .textoQuienessomos{
@@ -1946,7 +2508,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .footer__piepagina--ftrSuscribete--form{
-        padding-left: 60px;
+        padding-left: 55px;
     }
 
     .footer__piepagina--ftrInformacion--ul{
