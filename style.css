@@ -927,13 +927,13 @@ footer{
 .fondoContacto div{
     position: absolute;
     top: 50%;
-    left: 80%;
+    left: 75%;
     transform: translate(-15%, -50%);
     border-bottom: 4px solid #5c268c;
 }
 
 .fondoContacto img{
-    width: 1365px;
+    width: 1348px;
     height: 300px;
 }
 
