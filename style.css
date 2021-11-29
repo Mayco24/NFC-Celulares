@@ -1142,9 +1142,6 @@ input[type=number]::-webkit-outer-spin-button {
     h3{
         font-size: 20px;
     }
-    .colorPrecio{
-        font-size: 21px;
-    }
 
     /*----------------------------RESPONSIVE LAPTOP----------------------------*/
     /*--------------------------------HEADER------------------------------------*/
@@ -1158,7 +1155,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     
     .header__nav{
-        padding-left: 30px;
+        padding: 0;
     }
 
     .header__nav--menu--ul--li,.header__nav--botonesInicio--form--input{
@@ -1212,6 +1209,10 @@ input[type=number]::-webkit-outer-spin-button {
     .grid-Relojes img{
         width: 200px;
         height: 300px;
+    }
+    
+    .colorPrecio{
+        font-size: 21px;
     }
 
     .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
