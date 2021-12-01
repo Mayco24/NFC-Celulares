@@ -1,0 +1,223 @@
+footer{
+    padding: 1.5rem;
+    background-color: $bg_negro3;
+    border-bottom: 5px solid $bg_gris5;
+    .footer__piepagina{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 70px;
+        .footer__piepagina--ftrSuscribete{
+            .footer__piepagina--ftrSuscribete--h2{
+                @include condicion ($bg_blanco);
+                margin-top: 20px;
+                font-weight: 450;
+                font-size: 28px;
+            }
+            .footer__piepagina--ftrSuscribete--form{
+                padding: 50px;
+                padding-top: 10px;
+                .footer__piepagina--ftrSuscribete--form--p{
+                    @include condicion ($bg_blanco);
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: 20px;
+                }
+
+                .footer__piepagina--ftrSuscribete--form--input{
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid $bg_gris;
+                    padding: 2px;
+                    @include condicion ($bg_blanco);
+                    width: 230px;
+                    height: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin: 20px;
+                    &::placeholder{
+                        @include condicion ($bg_blanco);
+                    }
+                    &:hover{
+                        @include condicion ($bg_blanco);
+                        border: none;
+                        border-bottom: 2px solid $bg_blanco;
+                    }
+                    &:focus{
+                        border: 2px solid $bg_blanco;
+                        outline: none;
+                    }
+                }
+                .footer__piepagina--ftrSuscribete--form--button{
+                    background-color: $bg_morado;
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: none;
+                    @include condicion ($bg_blanco);
+                    margin-left: 85px;
+                }
+            }
+
+            .footer__piepagina__Contacto--ftrSuscribete--form{
+                padding-left: 50px;
+                padding-top: 10px;
+                .footer__piepagina__Contacto--ftrSuscribete--parrafoSuscribete{
+                    @include condicion ($bg_blanco);
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: 20px;
+                }
+
+                .footer__piepagina__Contacto--ftrSuscribete--inputSuscribete{
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid $bg_gris;
+                    padding: 2px;
+                    @include condicion ($bg_blanco);
+                    @include block(230px, 35px);
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin: 20px;
+                    &::placeholder{
+                        @include condicion ($bg_blanco);
+                    }
+                    &:hover{
+                        @include condicion ($bg_blanco);
+                        border: none;
+                        border-bottom: 2px solid $bg_blanco;
+                    }
+                    &:focus{
+                        border: 2px solid $bg_blanco;
+                        outline: none;
+                    }
+                }
+
+                .footer__piepagina__Contacto--ftrSuscribete--buttonSuscribete{
+                    background-color: $bg_morado;
+                    @include block(100px, 40px);
+                    border-radius: 5px;
+                    border: none;
+                    @include condicion ($bg_blanco);
+                    margin-left: 85px;
+                }
+
+            }
+            
+        }
+
+        .footer__piepagina--ftrInformacion{
+            .footer__piepagina--ftrInformacion--h2{
+                @include condicion ($bg_blanco);
+                margin-top: 20px;
+                font-weight: 450;
+                font-size: 28px;
+            }
+            .footer__piepagina--ftrInformacion--ul{
+                padding-left: 50px;
+                .footer__piepagina--ftrInformacion--ul--li{
+                    padding-top: 10px;
+                    border-bottom: 1px solid $bg_gris;
+                    list-style-type: none;
+                    padding: 5px;
+                    .footer__piepagina--ftrInformacion--ul--li--a{
+                        font-size: 16px;
+                        @include condicion ($bg_blanco);
+                        text-decoration: none;
+                        &:hover{
+                            @include condicion ($bg_blanco3);
+                        }
+                    }
+                    .footer__piepagina--ftrInformacion--ul--li--modal{
+                        color: black;
+                        .footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog{
+                            .footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content{
+                                .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body{
+                                    background-color: $bg_blanco3;
+                                    .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4{
+                                        padding: 15px;
+                                    }
+                                    .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p{
+                                        text-align: justify;
+                                    }
+                                    .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito{
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        justify-content: start;
+                                        .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito--p{
+                                            padding-left: 20px;
+                                        }
+                                    }
+                                    .footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--imgTarjetasDebito{
+                                        padding-bottom: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .footer__piepagina--ftrSecciones{
+            .footer__piepagina--ftrSecciones--h2{
+                @include condicion ($bg_blanco);
+                margin-top: 20px;
+                font-weight: 450;
+                font-size: 28px;
+            }
+            .footer__piepagina--ftrSecciones--ul{
+                padding-left: 50px;
+                .footer__piepagina--ftrSecciones--ul--li{
+                    @include condicion ($bg_blanco);
+                    text-align: start;
+                    padding-top: 10px;
+                    border-bottom: 1px solid $bg_gris;
+                    list-style-type: none;
+                    padding: 5px;
+                    .footer__piepagina--ftrSecciones--ul--li--a{
+                        @include condicion ($bg_blanco);
+                        text-decoration: none;
+                        font-size: 16px;
+                        text-decoration: none;
+                        &:hover{
+                            @include condicion ($bg_blanco3);
+                        }
+                    }
+                }
+            }
+        }
+        .footer__piepagina--ftrLogo {
+            .footer__piepagina--ftrLogo--img{
+                width:210px;
+                margin-top: 18px;
+            }
+            .footer__piepagina--ftrLogo--p{
+                padding-left: 30px;
+                @include condicion ($bg_blanco3);
+                font-size: 12px;
+                text-align: center;
+                padding-top: 30px;
+            }
+            .footer__piepagina--ftrLogo--redes_sociales{
+                padding-left: 30px;
+                margin: 20px;
+                .footer__piepagina--ftrLogo--redes_sociales--a{
+                    padding-left: 8px;
+                    .footer__piepagina--ftrLogo--redes_sociales--a--img{
+                        width: 35px;
+                        &:hover{
+                            transform: scale(1.08, 1.08);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}

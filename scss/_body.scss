@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #dadada;
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(5, auto);
+            grid-template-areas: "contHeader contHeader contHeader"
+            "contMain contMain contMain"
+            "contMain contMain contMain"
+            "contMain contMain contMain"
+            "contFooter contFooter contFooter";
+            header{
+                grid-area: contHeader;
+            }
+            main{
+                grid-area: contMain;
+            }
+            footer{
+                 grid-area: contFooter;
+            }
+        }
+        
+        h1{
+            font-weight: 600;
+            color: #707070;
+            font-size: 30px;
+            margin: 20px;
+        }
+        
+        h2{
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            font-weight: 500;
+            color: #707070;
+            font-size: 26px;
+        }
+        
+        h3{
+            font-size: 20px;
+            padding: 5px;
+        }
+        
+        h4{
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        p{
+            font-size: 15px;
+        }    
+}
