@@ -1,3 +1,3 @@
 # NFC-Celulares
 
-Proyecto Final esta en la carpeta de master.
+Proyecto Final esta en la rama master.
